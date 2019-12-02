@@ -356,11 +356,18 @@ body {
     .about {
         min-height: 70vh;
     }
+
 }
 
 @media screen and (max-height: 56.25em) {
     .about__manager {
         margin-bottom: 5rem;
+    }
+
+    #modal__back,
+    #prev,
+    #next {
+        font-size: .1rem;
     }
 }
 
@@ -719,12 +726,65 @@ body {
     width: 100%;
     height: 100%;
 
-    overflow: auto;
-
     /* margin: 20rem auto; */
     background-color: rgba(0, 0, 0, 0.9);
     /* background-image: linear-gradient(to right, rgba(0, 0, 0, .9), rgba(0, 0, 0, .9)); */
     /* opacity: .9; */
+    
+}
+
+ .modal > div {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    
+} 
+
+.modal__container {
+    height: 90%;
+    width: 100%;
+        
+    overflow: hidden;
+    position: relative;
+
+    
+}
+
+
+.modal__container > div {
+    height: 100%;
+    position: relative;
+
+}
+
+.modal__container p {
+    max-width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 0.5rem;
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
+.modal__img {
+    display: block;
+    height: 100%;
+    margin: 0 auto;
+    border-radius: 0.5rem;
+    opacity: 1;
+}
+
+.modal__caption {
+    display: block;
+    font-size: 1.6rem;
+    color: var(--color-primary-light);
+    text-align: center;
+
+    padding: 2rem 1rem;
 }
 
 #modal__back,
@@ -735,14 +795,19 @@ body {
     font-size: 5rem;
     color: var(--color-primary-light);
     cursor: pointer;
+    border-radius: 50%;
+
+    padding: .5rem;
+    background-color: var(--color-primary);
+    opacity: .4;
 
     position: absolute;
     
     transition: all 0.3s;
+    z-index: 30;
 }
 
 #modal__back {
-    font-size: 3rem;
     top: 3rem;
     right: 3rem;
 }
@@ -791,40 +856,9 @@ body {
     100% {
         transform: rotate(0deg);
     }
-}
+}      
 
-.modal__container {
-    margin: 0 auto;
-    max-width: 90%;
-    height: 90%;
-    padding-top: 7%;
-    /* ne moze margin jer se onda slika ne skalira
-    samo se pomera*/
-    /* margin-top: 10%; */
-    overflow: hidden;
-    position: relative;
-    
-}
 
-.modal__img {
-    display: block;
-    height: 90%;
-    margin: 0 auto;
-    /* max-width: 700px; */
-    /* margin-top: 10rem; */
-    border-radius: 0.5rem;
-
-    opacity: 1;
-}
-
-.modal__caption {
-    display: block;
-    font-size: 1.6rem;
-    color: var(--color-primary-light);
-    text-align: center;
-
-    padding: 2rem 1rem;
-}
 .modal__container,
 .modal__caption {
     animation-name: popup;
@@ -842,9 +876,9 @@ body {
 
 @media (max-width: 75em) {
     .modal__container {
-        max-width: 80%;
+        /* max-width: 80%; */
         height: 80%;
-        padding-top: 19%;
+        /* margin: 0 auto; */
     }
 }
 
@@ -860,6 +894,21 @@ body {
         padding-right: 0;
         padding-bottom: 1rem;
     }
+
+    .modal__container {
+        /* max-width: 80%; */
+        height: 60%;
+        /* margin: 0 auto; */
+    }
+    #modal__back,
+    #next {
+        font-size: 3rem;
+        
+    }
+    
+    #prev {
+        font-size: 3rem;
+    }
 }
 
 @media screen and (max-width: 37.5em) {
@@ -867,20 +916,36 @@ body {
         padding: 6.5rem 2rem 2rem 2rem;
     }
 
-    .modal__container {
-        padding-top: 35%;
-    }
-
     #modal__back,
     #next {
-        font-size: 3rem;
         right: 1.5rem;
         
     }
-
+    
     #prev {
-        font-size: 3rem;
         left: 1.5rem;
+    }
+}
+
+@media (max-height: 56.25em) {
+        
+    #modal__back,
+    #prev,
+    #next {
+        font-size: 3rem;
+    }
+}
+
+@media (max-height: 31.25em) {
+        
+    .modal__container p {
+        font-size: 1rem;
+    }
+
+    #modal__back,
+    #prev,
+    #next {
+        font-size: 1.5rem;
     }
 }
 /*-------------------------*/
