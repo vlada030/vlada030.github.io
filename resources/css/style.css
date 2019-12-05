@@ -746,10 +746,10 @@ body {
 .modal__container {
     height: 90%;
     width: 100%;
-        
+    
     overflow: hidden;
     position: relative;
-
+    
     
 }
 
@@ -757,6 +757,7 @@ body {
 .modal__container > div {
     height: 100%;
     position: relative;
+    border-radius: 0.5rem;
 
 }
 
@@ -766,16 +767,16 @@ body {
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
-    border-radius: 0.5rem;
     background-color: rgba(0, 0, 0, 0.75);
 }
 
 .modal__img {
     display: block;
     height: 100%;
+    width: 100%;
     margin: 0 auto;
-    border-radius: 0.5rem;
     opacity: 1;
+    object-fit: contain;
 }
 
 .modal__caption {
@@ -783,7 +784,7 @@ body {
     font-size: 1.6rem;
     color: var(--color-primary-light);
     text-align: center;
-
+    border-radius: .5rem;
     padding: 2rem 1rem;
 }
 
@@ -812,13 +813,16 @@ body {
     right: 3rem;
 }
 
-#prev {
+#prev, #next {
     top: 50%;
+    transform: translateY(-50%);
+}
+
+#prev {
     left: 3rem;
 }
 
 #next {
-    top: 50%;
     right: 3rem;
 }
 
