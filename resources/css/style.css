@@ -4,6 +4,11 @@
     --font-color: #dceffe;
 }
 
+::selection {
+    background-color: transparent;
+    color: #ffb900;
+}
+
 html {
     box-sizing: border-box;
     font-size: 62.5%;
