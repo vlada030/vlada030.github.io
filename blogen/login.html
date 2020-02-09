@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <script
+            src="https://kit.fontawesome.com/52005eadbf.js"
+            crossorigin="anonymous"
+        ></script>
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+            integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="./css/style.css" />
+        <title>Blogen</title>
+    </head>
+    <body>
+        <navbar class="navbar navbar-expand-sm navbar-dark bg-dark p-0">
+            <div class="container">
+                <a href="index.html" class="navbar-brand">Blogen</a>
+            </div>
+        </navbar>
+
+        <header id="main-header" class="py-4 bg-primary text-white">
+            <!-- <div class="container">
+            <h1><i class="fas fa-cog"></i> Dashboard</h1> 
+        </div> -->
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h1><i class="fas fa-user"></i> Blogen Admin</h1>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- LOGIN -->
+        <section id="login" class="my-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 mx-auto">
+                        <div class="card">
+                            <div class="card-header">
+                                <h4>Account Login</h4>
+                            </div>
+                            <div class="card-body">
+                                <form action="index.html">
+                                    <div class="form-group">
+                                        <label for="email">Email</label>
+                                        <input id="email" type="email" class="form-control">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="pass">Password</label>
+                                        <input id="pass" type="password" class="form-control">
+                                    </div>
+                                    <a href="#" class="text-muted">
+                                        <small>Forgot Your Password?</small>
+                                    </a>
+                                    <button type="submit" class="btn btn-primary btn-block mt-3">Submit</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer id="main-footer" class="bg-dark text-white p-3">
+            <div class="container">
+                <p class="lead text-center m-0">
+                    Copyright &copy; <span id="year"></span> Blogen
+                </p>
+            </div>
+        </footer>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+            integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+            crossorigin="anonymous"
+        ></script>
+        <script>
+            $("#year").text(new Date().getFullYear());
+        </script>
+    </body>
+</html>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://kit.fontawesome.com/52005eadbf.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Blogen</title>
+</head>
+<body>
+    <navbar class="navbar navbar-expand-sm navbar-dark bg-dark p-0">
+        <div class="container">
+            <a href="index.html" class="navbar-brand">Blogen</a>
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#myCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div id="myCollapse" class="collapse navbar-collapse">
+                <ul class="navbar-nav">
+                    <li class="nav-item px-1 px-lg-2">
+                        <a href="index.html" class="nav-link">Dashboard</a>
+                    </li>
+                    <li class="nav-item px-1 px-lg-2">
+                        <a href="posts.html" class="nav-link">Posts</a>
+                    </li>
+                    <li class="nav-item px-1 px-lg-2">
+                        <a href="categories.html" class="nav-link">Categories</a>
+                    </li>
+                    <li class="nav-item px-1 px-lg-2">
+                        <a href="users.html" class="nav-link">Users</a>
+                    </li>
+                    
+                </ul>
+
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item dropdown mr-3">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">
+                            <i class="fas fa-user"></i> Welcome Pero
+                        </a>
+                        <div class="dropdown-menu">
+                            <a href="profile.html" class="dropdown-item">
+                                <i class="fas fa-user-circle"></i> Profile
+                            </a>
+                            <a href="settings.html" class="dropdown-item">
+                                <i class="fas fa-cog"></i> Settings
+                            </a>
+                        </div>                   
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="login.html" class="nav-link">
+                            <i class="fas fa-user-times"></i> LogOut</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </navbar>
+
+    <header id="main-header" class="py-4 bg-primary text-white">
+        <!-- <div class="container">
+            <h1><i class="fas fa-cog"></i> Dashboard</h1> 
+        </div> -->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                        <h1><i class="fas fa-cog"></i> Settings</h1>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- ACTIONS -->
+    <section id="actions" class="py-4 mb-4 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 text-center">
+                    <a href="index.html" class="btn btn-light btn-block">
+                        <i class="fas fa-arrow-left"></i> Back To Dashboard
+                    </a>
+                </div>
+                <div class="col-md-4 text-center">
+                    <a href="index.html" class="btn btn-success btn-block">
+                        <i class="fas fa-check"></i> Save Changes
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- EDIT SETTINGS -->
+    <section id="settings">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4>Edit Settings</h4>
+                        </div>
+                        <div class="card-body">
+                            <form>
+                                <fieldset class="form-group">
+                                    <legend>Allow User Registration</legend>
+                                    <div class="form-check">
+                                        <label class="form-check-label">
+                                                <input type="radio" name="istoIme" class="form-check-input" value="yes" checked> Yes
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <label class="form-check-label">
+                                                <input type="radio" name="istoIme" class="form-check-input" value="no"> No
+                                        </label>
+                                    </div>
+                                    
+                                </fieldset>
+
+                                <fieldset class="form-group">
+                                    <legend>Homepage Format</legend>
+                                    <div class="form-check">
+                                        <label class="form-check-label">
+                                                <input type="radio" name="istoImeDaBiRadilo" class="form-check-input" value="posts" checked> Blog Page
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <label class="form-check-label">
+                                                <input type="radio" name="istoImeDaBiRadilo" class="form-check-input" value="page"> Home Page
+                                        </label>
+                                    </div>
+                                    
+                                </fieldset>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="main-footer" class="bg-dark text-white p-3">
+        <div class="container">
+            <p class="lead text-center m-0">
+                Copyright &copy; <span id="year"></span> Blogen
+            </p>
+        </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> 
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script>
+        $('#year').text(new Date().getFullYear());
+        // inicijalizacija text editora preko textarea tag
+    </script>
+</body>
+</html>

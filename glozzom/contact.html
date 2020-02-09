@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://kit.fontawesome.com/52005eadbf.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>BS boilerplate</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark" id="main-nav">
+        <div class="container">
+            <a href="index.html" class="navbar-brand">Glozzom</a>
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="services.html" class="nav-link">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="blog.html" class="nav-link">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link active">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HEADER -->
+    <header id="page-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 m-auto text-center">
+                    <h1>Read Our Blog</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur, id?</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- SECTION -->
+    <section id="contact" class="py-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card p-4">
+                        <div class="card-body">
+                            <h4>Get In Touch</h4>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum, odio?</p>
+                            <h4>Address</h4>
+                            <p>550 Main st, Boston, MA</p>
+                            <h4>Email</h4>
+                            <p>test@mail.com</p>
+                            <h4>Phone</h4>
+                            <p>(555) 555-5555</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <div class="card p-4">
+                        <div class="card-body">
+                            <h3 class="text-center">Please fill out this form to contact us</h3>
+                            <hr>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="First Name">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Last Name">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="email" class="form-control" placeholder="Email">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Phone Number">
+                                    </div>
+                                </div>
+                                
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <textarea class="form-control" cols="30" rows="5" placeholder="Message"></textarea>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <input type="button" value="Submit" class="btn btn-outline-danger btn-block"> 
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- STAFF SECTION -->
+    <section id="staff" class="py-5 text-center bg-dark text-white">
+        <div class="container">
+            <h2>Our Staff</h2>
+            <hr>
+            <div class="row">
+                <div class="col-md-3 mb-4">
+                    <img src="./img/person1.jpg" alt="person" class="img-fluid rounded-circle mb-2">
+                    <h4>Diane Doe</h4>
+                    <small>Marketing Manager</small>
+                </div>
+                <div class="col-md-3 mb-4">
+                        <img src="./img/person2.jpg" alt="person" class="img-fluid rounded-circle mb-2">
+                        <h4>Sophie Jannet</h4>
+                        <small>Creative Manager</small>
+                </div>
+                <div class="col-md-3 mb-4">
+                        <img src="./img/person3.jpg" alt="person" class="img-fluid rounded-circle mb-2">
+                        <h4>Jonas Doe</h4>
+                        <small>CEO</small>
+                </div>
+                <div class="col-md-3 mb-4">
+                        <img src="./img/person4.jpg" alt="person" class="img-fluid rounded-circle mb-2">
+                        <h4>Peter Manson</h4>
+                        <small>Web Developer</small>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- FOOTER -->
+    <footer id="main-footer" class="text-center p-2">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <p class="text-muted">Copyright &copy; <span id="year"></span> Glozzom</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> 
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script>
+        $('#year').text(new Date().getFullYear());
+
+    </script>
+</body>
+</html>
