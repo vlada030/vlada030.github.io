@@ -1,0 +1,12 @@
+{
+  "name": "napon-mont",
+  "version": "2.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "server": "live-server --open=index.html"
+  },
+  "keywords": [],
+  "author": "Vlada",
+  "license": "ISC"
+}

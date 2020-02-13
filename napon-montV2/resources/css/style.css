@@ -1,0 +1,92 @@
+:root {
+    --color-dark : rgb(5, 75, 129);
+    --color-light: rgb(116, 185, 255);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+::selection {
+    color: orange;
+}
+
+nav {
+    border-bottom: 1px solid #f8f9fa;
+}
+
+#main-footer {
+    border-top: 1px solid #f8f9fa;
+}
+
+#back2Top {
+    display: none; /*Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: rgba(255, 0, 0); /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+
+    transform: scale(0.95);
+    opacity: .5;
+    transition: all .3s;
+
+  }
+  
+  #back2Top:hover {
+    transform: scale(1);
+    opacity: .8;
+  }
+
+.carousel-item {
+    height: 88vh;
+}
+
+.carousel-image-1 {
+    /*background: url('../img/2-2.jpg');*/
+    background-image: linear-gradient(rgba(62, 117, 160, 0.6), rgba(5, 75, 129, .6) ), url('../img/2-2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.carousel-image-2 {
+    /* background: url('../img/3-3.jpg'); */
+    background-image: linear-gradient(rgba(5, 75, 129, .6), rgba(5, 75, 129, .6) ), url('../img/3-3.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: 65%;
+}
+
+.carousel-image-3 {
+    /* background: url('../img/5-5.jpg'); */
+    background-image: linear-gradient(rgba(5, 75, 129, .6), rgba(5, 75, 129, .6) ), url('../img/4-4.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 80% 80%;
+}
+
+#services, #about, #gallery {
+    background-image: linear-gradient(rgba(5, 75, 129, .6), rgba(5, 75, 129, .6) ), url('../img/flash-min.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* #services .card {
+    background-color: var(--color-light);
+} */
+
+#gallery .img-thumbnail {
+    background-color: var(--color-light);
+    border: none;
+    margin-bottom: 1rem;
+}
+
