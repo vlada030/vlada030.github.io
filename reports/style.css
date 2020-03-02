@@ -1,0 +1,158 @@
+/* :root {
+    --info: red !important;
+}*/
+
+html {
+    /* font-size: 62.5%; */
+    scroll-behavior: smooth;
+}
+/* 
+body {
+    font-size: 1.6rem;
+}  */
+
+.table td {
+  /* background-color: red; */
+  padding: .25rem .12rem;
+}
+
+.table input {
+  padding: .22rem;
+  text-align: center;
+}
+
+#footer { 
+    font-size: 1.2rem;
+}
+
+#footer .lead {
+    letter-spacing: 2px;
+    font-size: 1.6rem;
+}
+ #aprDetails p {
+     margin: 0;
+     line-height: 1.1;
+     font-size: .8rem;
+ }
+
+ hr {
+     box-shadow: 2px 2px 2px #000;
+ }
+
+label {
+    margin-bottom: 0;
+}
+
+.sign img {
+    width: 80%;
+    height: auto;
+    }
+
+/* prilikom stampe setuj padding na nulu */
+@media print {
+    #bruto, #neto, #drumSize {
+        padding: 0;
+    }
+
+    .smanji {
+      margin-top: 0rem !important;
+      margin-bottom: 0rem !important;
+      padding-top: 0rem !important;
+      padding-bottom: 0rem !important;
+
+    }
+
+    .centriraj {
+      flex-direction: row !important;
+    }
+
+    .stampa {
+      flex-wrap: nowrap;
+    }
+    .stampa > h2 {
+        font-size: 27px;
+        flex: 0 0 75%;
+        max-width: 75%;
+    }
+    
+
+
+}
+/* input elementi tipa number da nemaju spiner unutra */
+input[type='number'] {
+    -moz-appearance:textfield;
+
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+
+  #nav-icon3 {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    cursor: pointer;
+  }
+  
+  #nav-icon3 span {
+    display: block;
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    /* background: #d3531a; */
+    background: #17a2b8;
+    border-radius: 4px;
+    /* opacity: 1; */
+    left: 0;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .25s ease-in-out;
+    -moz-transition: .25s ease-in-out;
+    -o-transition: .25s ease-in-out;
+    transition: .25s ease-in-out;
+  }
+  
+  /* Icon 3 */
+  
+  #nav-icon3 span:nth-child(1) {
+    top: 4px;
+  }
+  
+  #nav-icon3 span:nth-child(2),#nav-icon3 span:nth-child(3) {
+    top: 14px;
+  }
+  
+  #nav-icon3 span:nth-child(4) {
+    top: 24px;
+  }
+  
+  #nav-icon3.open span:nth-child(1) {
+    top: 18px;
+    width: 0%;
+    left: 50%;
+  }
+  
+  #nav-icon3.open span:nth-child(2) {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+  
+  #nav-icon3.open span:nth-child(3) {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+  }
+  
+  #nav-icon3.open span:nth-child(4) {
+    top: 18px;
+    width: 0%;
+    left: 50%;
+  }

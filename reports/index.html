@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="sr">
+
+<head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-154361865-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-154361865-1');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/52005eadbf.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./style.css">
+    <title>Reports</title>
+    <link rel="shortcut icon" href="./img/favicon.png" />
+</head>
+
+<body class="bg-info">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark pb-1 sticky-top">
+        <div class="container">
+            <a href="index.html" class="navbar-brand">
+                <h3>REPORTS</h3>
+            </a>
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#myCollapse" id="hamb">
+                <p class="m-auto" id="nav-icon3">
+                    <!-- patern preuzet sa https://codepen.io/designcouch/pen/Atyop -->
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </p>
+
+            </button>
+            <!-- <button class="navbar-toggler" data-toggle="collapse" data-target="#myCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button> -->
+            <div id="myCollapse" class="collapse navbar-collapse">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link active">
+                            Domaći Izveštaji
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="ino.html" class="nav-link">
+                            Ino Izveštaji
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="smenski.html" class="nav-link">
+                            Smenski Izveštaji
+                        </a>
+                    </li>
+
+                </ul>
+
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item mr-2">
+                        <a href="login.html" class="nav-link">
+                            <i class="fas fa-user"></i> Welcome Mićo
+
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <i class="fas fa-user-times"></i> LogOut
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="report" class="py-2">
+        <div class="container bg-light">
+            <!-- prvi red -->
+            <div class="row align-items-center py-3" id="footer">
+                <div class="col-3 text-center">
+                    KONTROLA KVALITETA <p>QS 06.10.03.00/03</p>
+                </div>
+                <div class="col-6 text-center lead font-weight-normal">
+                    TF Kable Fabrika kablova Zaječar D.O.O.
+                </div>
+                <div class="col-3 text-center">
+                    Datum: <span id="date"></span>
+                </div>
+            </div>
+
+            <hr>
+
+            <!-- drugi red -->
+            <div class="row my-3 pb-3">
+                <div class="col-10 mx-auto">
+                    <!-- <div class="col m-auto d-flex wrap-nowrap align-items-center justify-content-center">
+                    <h2 class="text-center my-4">Izveštaj o rutinskom ispitivanju
+                    </h2>
+                    <input type="text" class="form-control ml-2" style="width: 4rem" id="ordinaryNumber" value=359>
+                    <p class="m-0">/ <span class="year"></span></p>
+                </div> -->
+                    <div class="row wrap-nowrap align-items-center justify-content-center my-5 stampa">
+                        <h2 class="col-lg-8 text-center text-lg-right my-4">Izveštaj o rutinskom ispitivanju
+                        </h2>
+                        <div
+                            class="col-lg-3 d-flex wrap-nowrap align-items-center justify-content-center justify-content-lg-start">
+                            <input type="text" class="form-control ml-2" style="width: 4rem" id="ordinaryNumber"
+                                value=359>
+                            <p class="m-0">/ <span class="year"></span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-10 mx-auto">
+                    <div class="border border-dark p-3">
+
+                        <!-- SIFRA -->
+                        <div class="row font-weight-bold mb-3 d-print-none">
+                            <div class="col-lg-6">
+                                <div class="row align-items-center">
+                                    <div class="col-4">Šifra proizvoda:</div>
+                                    <div class="col-8">
+                                        <input type="text" id="code" class="form-control font-weight-bold" required>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- treci red -->
+                        <div class="row font-weight-bold mb-2">
+                            <div class="col-lg-6">
+                                <div class="row">
+                                    <div class="col-4">Tip kabla:</div>
+                                    <div class="col-8">
+                                        <p id="cableType" class="ml-2">/</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6">
+                                <div class="row">
+                                    <div class="col-4">
+                                        Naponski nivo:
+                                    </div>
+                                    <div class="col-4">
+                                        <p id="ratedVoltage" class="ml-1">/</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- cetvrti red -->
+
+                        <div class="row font-weight-bold mb-2 stampa">
+                            <div class="col-lg-6">
+                                <div class="form-group row align-items-center">
+                                    <div class="col-4">
+                                        <label for="workOrder">Radni nalog: </label>
+                                    </div>
+                                    <div class="col-8">
+                                        <input type="text" id="workOrder" class="form-control font-weight-bold"
+                                            required>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6">
+                                <div class="form-group row align-items-center">
+                                    <div class="col-4">
+                                        <label for="num">Broj kalema: </label>
+                                    </div>
+                                    <div class="col-4">
+                                        <input type="text" id="misNumber" class="form-control font-weight-bold"
+                                            required>
+                                    </div>
+                                    <div class="col-4">
+                                        <select id="drumSize" class="form-control font-weight-bold">
+                                            <option value="TK06T">TK06T</option>
+                                            <option value="TK07T">TK07T</option>
+                                            <option value="TK08T">TK08T</option>
+                                            <option value="TK08AT">TK08AT</option>
+                                            <option value="TK100T">TK100T</option>
+                                            <option value="TK090T">TK090T</option>
+                                            <option value="TK10AT" selected>TK10AT</option>
+                                            <option value="TK120T">TK120T</option>
+                                            <option value="TK140T">TK140T</option>
+                                            <option value="TK160T">TK160T</option>
+                                            <option value="TK180T">TK180T</option>
+                                            <option value="TK200T">TK200T</option>
+                                            <option value="TK20AT">TK20AT</option>
+                                            <option value="TK210T">TK210T</option>
+                                            <option value="TK220T">TK220T</option>
+                                            <option value="TK240T">TK240T</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!-- peti red -->
+                        <div class="row font-weight-bold mb-2 stampa">
+                            <div class="col-lg-6">
+                                <div class="form-group row align-items-center">
+                                    <div class="col-4">
+                                        <label for="length">Dužina kabla:</label>
+                                    </div>
+
+                                    <div class="input-group col-5">
+                                        <input type="number" id="length"
+                                            class="form-control text-right font-weight-bold" required>
+                                        <div class="input-group-append">
+                                            <span class="input-group-text">m</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="form-group row align-items-center">
+                                    <div class="col-4">
+                                        <label for="weight">Masa (bruto/neto): </label>
+                                    </div>
+
+                                    <div class="input-group col-4">
+                                        <input type="number" id="bruto" class="form-control text-right font-weight-bold"
+                                            required>
+                                        <div class="input-group-append">
+                                            <span class="input-group-text">kg</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="input-group col-4">
+                                        <input type="number" id="neto" class="form-control text-right font-weight-bold"
+                                            required>
+                                        <div class="input-group-append">
+                                            <span class="input-group-text">kg</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- sesti red -->
+                        <div class="row font-weight-bold">
+                            <div class="col-6">
+                                <div class="row">
+                                    <div class="col-4">
+                                        <label for="norm">Propis:</label>
+                                    </div>
+
+                                    <div class="col-8">
+                                        <p id="standard" class="ml-2">/</p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="text-center py-2 d-print-none">
+                        <button class="btn btn-warning btn-lg" id="saveAsPDF">Sačuvaj PDF</button>
+                    </div>
+                    <table class="table table-bordered table-responsive-sm table-hover my-5">
+                        <thead class="thead-dark">
+                            <tr>
+                                <th scope="col" class="cool-5">Vrsta ispitivanja</th>
+                                <th scope="col" class="cool-2">Jedinica</th>
+                                <th scope="col" class="cool-5">Izmereno</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>Broj žica</td>
+                                <td>kom</td>
+                                <td id="wiresNumber">/</td>
+                            </tr>
+                            <tr>
+                                <td>Prečnik žice</td>
+                                <td>mm</td>
+                                <td id="wireDiametar">/</td>
+                            </tr>
+                            <tr>
+                                <td>Maksimalni dozvoljeni otpor provodnika</td>
+                                <td>ohm/km</td>
+                                <td id="resistance">/</td>
+                            </tr>
+                            <tr>
+                                <td>Debljina izolacije</td>
+                                <td>mm</td>
+                                <td id="thickInsulation">/</td>
+                            </tr>
+                            <tr>
+                                <td>Debljina prvog poluprovodnog sloja</td>
+                                <td>mm</td>
+                                <td id="semiFirst">/</td>
+                            </tr>
+                            <tr>
+                                <td>Debljina drugog poluprovodnog sloja</td>
+                                <td>mm</td>
+                                <td id="semiSecond">/</td>
+                            </tr>
+                            <tr>
+                                <td>Debljina plašta</td>
+                                <td>mm</td>
+                                <td id="thickSheath">/</td>
+                            </tr>
+                            <tr>
+                                <td>Spoljni prečnik</td>
+                                <td>mm</td>
+                                <td id="outerDiametar">/</td>
+                            </tr>
+                            <tr>
+                                <td>Ispitni napon</td>
+                                <td>kV</td>
+                                <td id="testVoltage">/</td>
+                            </tr>
+                            <tr>
+                                <td>Maksimalno dozvoljena parcijalna pražnjenja</td>
+                                <td>pC</td>
+                                <td id="pDischarge">/</td>
+                            </tr>
+
+                        </tbody>
+
+
+                    </table>
+                    <p class="text-center font-weight-bold">Ovim se potvrđuje da je kabl ispitan u skladu sa standardom
+                        i da u potpunosti zadovoljava tražene zahteve.</p>
+
+                    <div class="row my-4 sign">
+                        <div class="col-4 ml-auto">
+                            <div class="row">
+                                <p class="m-0">Šef Kontrole kvaliteta i Laboratorije</p>
+                                <p>dipl ing el Slaviša Marković</p>
+                                <img src="./img/Potpis Sasa.jpg" class="img mb-5" alt="potpis">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <footer id="main-footer" class="bg-dark text-light text-center">
+        Reports &copy; <span class="year"></span>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <script>
+        // datum
+        var formatedDate = new Date().getDate() + '.' + (new Date().getMonth() + 1) + '.' + new Date().getFullYear() + '.';
+        $('#date').text(formatedDate);
+        // godina
+        $(".year").text(new Date().getFullYear());
+        // hamburger button
+        $(document).ready(function () {
+            $('#hamb').click(function () {
+                $('#nav-icon3').toggleClass('open');
+            });
+        });
+
+        // button SAVE AS PDF && SCROLL TO TOP
+        document.getElementById('saveAsPDF').addEventListener('click', function(){
+            window.print();
+            let no = document.getElementById('ordinaryNumber');
+            no.value = parseInt(no.value) + 1;
+        });
+    </script>
+    <script src="./index.js"></script>
+</body>
+
+</html>
