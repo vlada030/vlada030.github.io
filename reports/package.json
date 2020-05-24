@@ -1,0 +1,16 @@
+{
+  "name": "reports",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "server": "live-server --open=index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://Vlajkoni@bitbucket.org/Vlajkoni/reports.git"
+  },
+  "author": "Vlada",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/Vlajkoni/reports#readme"
+}

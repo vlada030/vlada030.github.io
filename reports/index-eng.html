@@ -93,8 +93,8 @@
 
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item mr-2">
-                        <a href="index-eng.html" class="nav-link"> Promeni jezik 
-                            <img src="./img/en.png" alt="en" class="icon">
+                        <a href="index.html" class="nav-link"> Promeni jezik 
+                            <img src="./img/sr.png" alt="sr" class="icon">
                         </a>
                     </li>
                     
@@ -122,14 +122,13 @@
 
             <!-- drugi red -->
             <!-- <div class="row align-items-center justify-content-center mb-5 pb-5">
-                <h2 class="col col-lg-6 text-center mr-2">Izveštaj&nbsp;o&nbsp;Rutinskom&nbsp;ispitivanju</h2>
+                <h2 class="col-12 col-lg-4 text-center mr-2">Routine&nbsp;Test&nbsp;Report</h2>
                 <input type="text" class="form-control" style="width: 4rem" id="ordinaryNumber" value=1>
-                <p class="m-0">&nbsp;/ <span class="year"></span></p>
-                              
+                <p class="m-0">&nbsp;/ <span class="year"></span></p>                              
             </div> -->
             <div class="row mb-5 pb-5">
-                <div class="col d-flex wrap-nowrap align-items-center justify-content-center">
-                    <h2 class="text-center mr-4">Izveštaj o rutinskom ispitivanju</h2>
+                <div class="col m-auto d-flex wrap-nowrap align-items-center justify-content-center">
+                    <h2 class="text-center mr-4">Routine&nbsp;Test&nbsp;Report</h2>
                     <input type="text" class="form-control" style="width: 4rem" id="ordinaryNumber" value="1">
                     <p class="m-0">&nbsp;/ <span class="year"></span></p>
                 </div>
@@ -145,7 +144,7 @@
                                 <div class="row align-items-center">
                                     <div class="col-4">Šifra proizvoda:</div>
                                     <div class="col-8">
-                                        <input type="number" id="productCode" class="form-control font-weight-bold" placeholder="Unesi 7-cifreni broj" >
+                                        <input type="number" id="productCode" class="form-control font-weight-bold" placeholder="Unesi 7-cifreni broj">
                                         <small>Error message</small>
                                     </div>
                                 </div>
@@ -155,7 +154,7 @@
                         <div class="row font-weight-bold mb-2">
                             <div class="col-lg-6">
                                 <div class="row">
-                                    <div class="col-4">Tip kabla:</div>
+                                    <div class="col-4">Cable Type:</div>
                                     <div class="col-8">
                                         <p id="cableType" class="ml-2">/</p>
                                     </div>
@@ -165,7 +164,7 @@
                             <div class="col-lg-6">
                                 <div class="row">
                                     <div class="col-4">
-                                        Nazivni napon:
+                                        Rated Voltage:
                                     </div>
                                     <div class="col-4">
                                         <p id="ratedVoltage" class="ml-1">/</p>
@@ -179,10 +178,10 @@
                             <div class="col-lg-6">
                                 <div class="form-group row align-items-center">
                                     <div class="col-4">
-                                        <label for="workOrder">Radni nalog: </label>
+                                        <label for="workOrder">Order No: </label>
                                     </div>
                                     <div class="col-8">
-                                        <input type="number" id="workOrder" class="form-control font-weight-bold" placeholder="Unesi 8-cifreni broj" >
+                                        <input type="number" id="workOrder" class="form-control font-weight-bold" placeholder="Unesi 8-cifreni broj">
                                         <small>Error message</small>
                                     </div>
                                 </div>
@@ -191,10 +190,10 @@
                             <div class="col-lg-6">
                                 <div class="form-group row align-items-center">
                                     <div class="col-4">
-                                        <label for="num">Broj kalema: </label>
+                                        <label for="num">Drum Number: </label>
                                     </div>
                                     <div class="col-4">
-                                        <input type="text" id="misNumber" class="form-control font-weight-bold" placeholder="7-cifreni broj" >
+                                        <input type="text" id="misNumber" class="form-control font-weight-bold" placeholder="7-cifreni broj">
                                         <small>Error message</small>
                                     </div>
                                     <div class="col-4">
@@ -228,7 +227,7 @@
                             <div class="col-lg-6">
                                 <div class="form-group row align-items-center">
                                     <div class="col-4">
-                                        <label for="length">Dužina:</label>
+                                        <label for="length">Cable Length:</label>
                                     </div>
 
                                     <div class="input-group col-5">
@@ -244,7 +243,7 @@
                             <div class="col-lg-6">
                                 <div class="form-group row align-items-center">
                                     <div class="col-4">
-                                        <label for="weight">Težina (bruto/neto): </label>
+                                        <label for="weight">Weight (bruto/neto): </label>
                                     </div>
 
                                     <div class="input-group col-4">
@@ -271,7 +270,7 @@
                             <div class="col-6">
                                 <div class="row">
                                     <div class="col-4">
-                                        <label for="norm">Propis:</label>
+                                        <label for="norm">Norm:</label>
                                     </div>
 
                                     <div class="col-8">
@@ -354,6 +353,8 @@
                             </tr>
 
                         </tbody>
+
+
                     </table>
                     <p class="text-center font-weight-bold">This confirms that the cable has been tested in accordance with the standard and to fully meet the requirements.
                     </p>
@@ -399,10 +400,8 @@
             });
         });
 
-        
     </script>
     <script src="./index.js"></script>
-    <!-- <script src="./validator.js"></script> -->
 </body>
 
 </html>
