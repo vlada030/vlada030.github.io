@@ -24924,6 +24924,13 @@ const showError = (input, message) => {
     input.parentElement.lastElementChild.style.display = 'block';
     input.parentElement.lastElementChild.innerText = message;
 };
+
+const removeSuccessClass = (arr) => {
+    arr.forEach(input => {
+        input.classList.remove('success');
+    });
+};
+
 const checkEmptyFields = (inputArr) => {
     let counter = 0;
     inputArr.forEach(input => {
@@ -24967,6 +24974,8 @@ if (form1) {
         
         if (workOrderState && misNumberState && emptyFieldsState) {
             printWindow();
+            // skloni zeleni okvir nakon pozivanja stampe
+            removeSuccessClass([productCode, workOrder, misNumber, leng, bruto, neto]);
         }
     });
 
@@ -24979,8 +24988,8 @@ if (form2) {
     
         if (yearManufactureState) {
             printWindow();
-        }
-    
+            removeSuccessClass([productCode, yearManufacture]);
+        }    
     });
 }
 
@@ -25049,7 +25058,11 @@ window.addEventListener('keyup', function (event) {
 });
 
 document.querySelector('form').addEventListener('reset', function() {
+    // polje totalLength postoji samo u ino.html / ino-eng.html
     if (totalLength) {
         totalLength.textContent = 0;
+        removeSuccessClass([productCode, yearManufacture]);
+    } else {
+        removeSuccessClass([productCode, workOrder, misNumber, leng, bruto, neto]);
     }
 });
