@@ -21,38 +21,116 @@
     <div class="container">
         <section class="front">
             <div class="center">
+                <a class="btn__contact" href="#contact">Contact</a>
                 <h1 class="front-title">Welcome to my web presentation!</h1>
                 <div class="front-body">
-                    <p>I am happy to see you here and to show you my work.</p>
+                    <p>I am happy to see you here</p>
                     <p>Bellow you can find en examples of my work</p>
                 </div>
             </div>
         </section>
 
+        <hr class="line">
+
         <main class="main">
             <div>
                 <div class="main-header">
-                    <h2>All these pages are products of real-life needs and practicing, built using different techniques, both front-end & back-end.</h2>
-                    <p>Hover over each item and see short description about that webpage. Also you can click on it and explore that page.</p>
+                    <h3>All these pages are products of real-life needs and practicing, built using different techniques, both front-end & back-end.</h3>
+                    <!-- <p>Hover over each item and see short description about that webpage. Also you can click on it and explore that page.</p> -->
                 </div>
                 <div class="main-body">
                     <div class="card">
                         <div class="card-body">
                             <a href="/resources/pages/napon-mont/index.html" target="_blank">
-                            <figure>
-                                <img src="/resources/img/napon-mont.png" alt="napon-mont-v1">
-                                <figcaption>Napon-Mont ver. 1</figcaption>  
-                            </figure>
+                                <img src="/resources/img/napon-mont-1.PNG" alt="napon-mont-v1">
+                            </a>
                         </div> 
                         <div class="card-footer">
+                            <h4>Napon-Mont v1</h4>
                             <p>This webpage is one of my very first projects.</p>
-                            <p>It is built using pure HTML and CSS. Of course, Java Script basic DOM manipulation and some of jQuery popular libraries (waypoint, smooth scroll...) are also included.</p>   
+                            <p>A real-life example, built using pure HTML and CSS. Of course, Java Script basic DOM manipulation and some of jQuery popular libraries (waypoint, smooth scroll...) are also included.</p>   
+                        </div>                     
+                    </div>
+
+                    <div class="card">
+                        <div class="card-body">
+                            <a href="/resources/pages/napon-montV2/index.html" target="_blank">
+                                <figure>
+                                    <img src="/resources/img/nmV2.png" alt="napon-mont-v2">
+                                </figure>
+                            </a>
                         </div> 
-                    </a>
+                        <div class="card-footer">
+                            <h4>Napon-Mont v2</h4>
+                            <p>The same goal as Napon-Mont v1.</p>
+                            <p>It is built using Bootstrap. Instead single page it uses couple of pages for different menu options.</p>   
+                        </div>                     
+                    </div>
+
+                    <div class="card">
+                        <div class="card-body">
+                            <a href="/resources/pages/webapiapp/index.html" target="_blank">
+                                <figure>
+                                    <img src="/resources/img/PicAPIApp.PNG" alt="webApiApp">
+                                </figure>
+                            </a>
+                        </div> 
+                        <div class="card-footer">
+                            <h4>For Fun</h4>
+                            <p>A page created just for fun and practicing Java Script and it's MVC hierarchy model.</p>
+                            <p>Main goal of this webpage is to chain several public APIs - first API for fetching free pictures (with coordinates if they are provided), second one for translation those coords indo adrressess, third for google maps and showing it on map and the forth for loading weather forecast for that area. Both , maps and forecast depend on coordinates attached with picture.</p>   
+                        </div>                     
+                    </div>
+
+                    <div class="card">
+                        <div class="card-body">
+                            <a href="/resources/pages/fkz/resources/localization/sr/index.html" target="_blank">
+                                <figure>
+                                    <img src="/resources/img/fkz.jpg" alt="fkz">
+                                </figure>
+                            </a>
+                        </div> 
+                        <div class="card-footer">
+                            <h4>TF Kable Fabrika Kablova Zaječar</h4>
+                            <p>Another Bootstrap project and real-life example.</p>
+                            <p>This is just a shell, basic structure of one potentially large web presentation. </p>   
+                        </div>                     
+                    </div>
+
+                    <div class="card">
+                        <div class="card-body">
+                            <a href="/resources/pages/reports/index.html" target="_blank">
+                                <figure>
+                                    <img src="/resources/img/reports.PNG" alt="reports">
+                                </figure>
+                            </a>
+                        </div> 
+                        <div class="card-footer">
+                            <h4>Reports</h4>
+                            <p>Application for preparing, saving, issuing Test Reports and other things </p>
+                            <p>Real - life web application that includes front-end and back-end part. Front - end or pages are built over Bootstrap and server side generated. As a template engine, PUG is used. Back-end is done by NodeJS, it's framework Express and as a storing medium MongoDB is used.</p>   
+                        </div>                     
                     </div>
                 </div>
             </div>
         </main>
+
+        <hr class="line">
+
+        <section class="contact" id="contact">
+            <div class="center">
+                <h3>Contact info</h3>
+                <a href="mailto:vlada030@gmail.com">
+                    <i class="far fa-envelope"></i>
+                    <span>vlada030@gmail.com</span>
+                </a>
+                <a href="https://github.com/vlada030">
+                    <i class="fab fa-github"></i>
+                    <span>My Github Repository</span>
+                </a>
+            </div>
+        </section>
+
 
         <footer class="footer center">
             <p>&copy;</p>
