@@ -1,3 +1,3 @@
 window.addEventListener('load', () => {
-    document.querySelector('footer p').innerHTML = `@ ${new Date(Date.now()).getFullYear()}`;
+    document.querySelector('footer #year').innerText = `${new Date(Date.now()).getFullYear()}`;
 })
