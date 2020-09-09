@@ -94,10 +94,17 @@ body {
     
 }
 
+@media only screen and (max-width: 37.5em) {
+    .front .btn__contact {
+        right: unset;
+        left: 2rem;
+    }
+}
+
 .main {
     padding: 2.5rem;
     margin: 2rem;
-    background-color: rgba(116, 185, 255, 0.4);
+    background-color: rgba(116, 185, 255, 0.5);
     border-radius: .5rem;
     
 }
@@ -106,7 +113,7 @@ body {
     padding: 2rem;
     margin: 0 auto;
     margin-bottom: 10rem;
-    width: 70%;
+    width: 80%;
     
 }
 
@@ -115,9 +122,19 @@ body {
     font-weight: 300;
     color: var(--font-color);
     text-align: center;
-    border-bottom: .1rem solid var(--color-secondary-light);
+    /* border-bottom: .1rem solid var(--color-secondary-light); */
     text-shadow: 0 0 10px var(--color-primary-light), 0 0 40px var(--color-primary-light), 0 0 80px var(--color-primary-light);
+    background-color: var(--color-primary);
+    border-radius: .5rem;
+    padding: 1rem;
 } 
+
+@media only screen and (max-width: 37.5em) {
+    .main-header {
+        width: 100%;
+        padding: 0;
+    }
+}
 
 .card {
     color: var(--font-color-2);
@@ -230,7 +247,7 @@ body {
 
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: start;
 
     transform: scale(.9);
     transition: transform .4s;
