@@ -67,6 +67,9 @@ body {
 
     transform: scale(.9);
     transition: transform .4s;
+
+    z-index: 200;
+    background-color: var(--color-primary);
 }
 
 .front .btn__contact:hover {
