@@ -1,13 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-154361865-1"></script>
-        <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'UA-154361865-1');
-        </script>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
@@ -500,11 +493,10 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="js/jquery.waypoints.min.js"></script>
         <script src="js/typeWriter.js"></script>
-        <!-- <script src="js/jQuery.js"></script> -->
+
+        <!-- console log  izbacivaće grešku jer inicijalna strana ne sadrži #map element koji skripta ispod trazi-->
         <script
             src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAoWNGUPJOoVMR9J27anaGYyQkjXU7NEJY&callback=initMap"
-            async
-            defer
         ></script>
     <script type="text/javascript" src="js/bundle.js"></script></body>
 </html>
