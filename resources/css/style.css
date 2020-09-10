@@ -216,6 +216,7 @@ body {
 }
 
 .contact {
+    color: var(--font-color-2);
     padding: 2.5rem;
     margin: 2rem;
     background-color: rgba(202, 204, 101, .9);
@@ -223,7 +224,6 @@ body {
 }
 
 .contact p {
-    color: var(--font-color);
     font-size: 2rem;
     width: 80%;
     margin: 0 auto;
@@ -232,7 +232,6 @@ body {
 }
 
 .contact h3 {
-    color: var(--font-color);
     font-size: 3rem;
     font-weight: 300;
     text-shadow: 0 0 20px var(--color-primary), 0 0 60px var(--color-primary), 0 0 120px var(--color-primary);
@@ -241,8 +240,8 @@ body {
     letter-spacing: .5rem;
 }
 
-.contact a {
-    color: var(--font-color);
+.contact a:link {
+    color: var(--font-color-2);
     padding: 1rem 1.5rem;
     text-decoration: none;
     text-transform: uppercase;
@@ -260,6 +259,10 @@ body {
 .contact a:hover {
     transform: scale(1);
     text-shadow: 0 0 10px var(--color-primary), 0 0 20px var(--color-primary), 0 0 50px var(--color-primary), 0 0 90px var(--color-primary);
+}
+
+.contact a:visited {
+    color: var(--font-color-2);
 }
 
 .footer {
