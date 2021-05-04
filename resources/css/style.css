@@ -1,12 +1,16 @@
 :root {
     --color-primary: rgb(5, 75, 129);
-    --color-primary-light: rgba(38, 159, 252, 0.459);
-    --color-secondary: rgb(202, 204, 101);
+    --color-primary-light: rgba(38, 159, 252, 0.582);
+    --color-secondary: rgba(202, 204, 101, .9);
     --color-secondary-light: #f9fd05;
     --color-tertiary: violet;
     --font-color: #dceffe;
     --font-color-2: #0d1566;
     --radius: 0.25rem;
+    --transition: all 0.3s;
+    --shadow: 0px 13px 29px -8px rgba(0,0,0,0.73);
+    --text-shadow: 0 0 10px var(--color-primary), 0 0 20px var(--color-primary), 0 0 50px var(--color-primary), 0 0 90px var(--color-primary);
+    
     
 }
 
@@ -16,12 +20,12 @@ html {
     scroll-behavior: smooth;
 }
 
-@media only screen and (min-width: 112.5em) {
+/* @media only screen and (min-width: 112.5em) {
 
     html {
         font-size: 75%;
     }
-}
+} */
 
 *,
 *::before,
@@ -40,7 +44,8 @@ body {
 }
 
 main {
-    background-color: var(--color-primary-light);
+    /* background-color: var(--color-primary-light); */
+    background-color: var(--color-secondary);
     border-radius: var(--radius);    
 }
 
@@ -64,7 +69,7 @@ main {
     padding: .25rem 1.5rem;    
     box-shadow: 0 0 4px var(--color-tertiary), 0 0 12px var(--color-tertiary), 0 0 22px var(--color-tertiary);
     border-radius: 5rem;
-    transition: all .3s;
+    transition: var(--transition);
     background-color: transparent;
 
     z-index: 200;
@@ -114,9 +119,9 @@ main {
 .content-about {
     padding: 2rem;
     margin: 4rem auto;
-    background-color: var(--color-primary);
+    background-color: var(--color-primary-light);
     border-radius: var(--radius);
-    color: var(--font-color);    
+    color: var(--font-color-2);    
 }
 
 .content-about h3 {
@@ -151,7 +156,7 @@ main {
 .card {
     color: var(--font-color-2);
     margin-bottom: 6rem;
-    background-color: rgba(202, 204, 101, .9);
+    background-color: var(--color-primary-light);
     border-radius: var(--radius);
 
     display: flex;
@@ -159,30 +164,38 @@ main {
     justify-content: space-between;
 }
 
-.swiper-container {
+.card-body {
+    padding: 2rem;
     width: 100%;
     max-width: 600px;
-    padding: 1rem;
+}
+
+.swiper-container {
+    width: 100%;
+    box-shadow: var(--shadow);
 }
 
 .swiper-container img {
-    /* height: 20rem;
-    width: auto; */
+    display: block;
     width: 100%;
     height: 100%;
-    /* box-shadow: 21px 21px 40px -10px rgba(0,0,0,0.75); */
     object-fit: cover;
     border-radius: var(--radius);
+    
 }
 
 .card-footer {
-    flex: 0 1 50%;
+    /* flex: 0 1 50%; */
+    width: 100%;
+    max-width: 500px;
     padding: 2rem;
+    text-align: left;
 }
 
 .card-footer h4 {
-    font-size: 2.5rem;
-    font-weight: 300;
+    font-size: 3.5rem;
+    font-weight: 400;
+    letter-spacing: 2px;
     margin-bottom: 2rem;
 }
 
@@ -190,15 +203,41 @@ main {
     margin-bottom: 1rem;
 }
 
+.card-footer a {
+    text-decoration: none;
+    color: inherit;
+    transition: var(--transition);
+}
+
+.card-footer a:hover, 
+.card-footer a:active {
+    text-shadow: var(--text-shadow);
+}
+
+.card-footer a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.card-footer ul {
+    list-style: none;
+}
+
 @media only screen and (max-width: 56.25em) {
     html {
         font-size: 50%;
     }
+    .card {
+        flex-direction: column;
+    }   
+    .card-body {
+        max-width: 500px;
+    } 
 }
 
 @media only screen and (max-width: 37.5em) {
-    .card {
-        flex-direction: column;
+    .card-body {
+        padding: 0;
     }
 }
 
@@ -207,7 +246,7 @@ main {
     margin: 2rem auto;
     color: var(--font-color-2);
     padding: 2.5rem;
-    background-color: rgba(202, 204, 101, .9);
+    background-color: var(--color-secondary);
     border-radius: var(--radius);
 }
 
@@ -239,14 +278,14 @@ main {
     align-items: center;
     justify-content: start;
 
-    transform: scale(.9);
-    transition: transform .4s;
+    transform: scale(.95);
+    transition: var(--transition);
     
 }
 
 .contact a:hover {
     transform: scale(1);
-    text-shadow: 0 0 10px var(--color-primary), 0 0 20px var(--color-primary), 0 0 50px var(--color-primary), 0 0 90px var(--color-primary);
+    text-shadow: var(--text-shadow);
 }
 
 .contact a:visited {
@@ -263,7 +302,7 @@ main {
 .footer {
     width: 100%;
     height: 2rem;
-    background-color: #cacc65;
+    background-color: var(--color-secondary);
 
     display: flex;
     align-items: center;
