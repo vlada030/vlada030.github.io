@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <link rel="shortcut icon" href="./img/favicon/icons8-place-marker-64.png" type="image/x-icon">
+        <title>Where? Map & Weather please!</title>
+        <link
+            href="https://fonts.googleapis.com/css?family=Handlee|Lato:100,300,400&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="css/icofont/icofont.min.css" />
+        <!-- <link rel="stylesheet" href="css/style.css" /> -->
+    <link href="style.css" rel="stylesheet"></head>
+
+    <body>
+        <section class="section front" id="frnt">
+            <div class="container__secondary p1"></div>
+            <div class="container__tertiary p1"></div>
+            <div class="container p1">
+                <div class="likes">
+                    <a href="#">
+                        <i class="icofont-heart"></i>
+                        <!-- <span>12</span> -->
+                    </a>
+                </div>
+                <h1 class="p1">
+                    Would you like to explore
+                    <span class="txt-type"
+                    data-wait="3000"
+                    data-words='["beaches?", "cities?", "mountains?", "forests?"]'></span>
+                </h1>
+                <p class="p1">Just choose !</p>
+                <div class="list__wrapper" id="search">
+                    <ul class="list">
+                        <li>
+                            <a href="#gall" data-id="beach"><i class="icofont-island-alt"></i></a>
+                        </li>
+
+                        <li>
+                            <a href="#gall" data-id="city"><i class="icofont-building-alt"></i></a>
+                        </li>
+
+                        <li>
+                            <a href="#gall" data-id="mountain"><i class="icofont-hill-side"></i></a>
+                        </li>
+
+                        <li>
+                            <a href="#gall" data-id="forest"><i class="icofont-tree"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="likes__container">
+                <div>
+                    <button class="btn btn__back p1">
+                        <i class="icofont-reply"></i>
+                    </button>
+
+                    <ul class="gallery__list">
+                        <!-- <li>
+                            <img src="img/b-1.jpg" alt="beach-1" />
+                            <div class="caption">
+                                <h3 class="title">Beach wallpaper</h3>
+                                <i class="icofont-heart"></i>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="img/b-2.jpg" alt="beach-2" />
+                            <div class="caption">
+                                <h3 class="title">Beach wallpaper</h3>
+                                <i class="icofont-heart"></i>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="img/b-3.jpg" alt="beach-3" />
+                            <div class="caption">
+                                <h3 class="title">Beach wallpaper</h3>
+                                <i class="icofont-heart"></i>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="img/b-4.jpg" alt="beach-4" />
+                            <div class="caption">
+                                <h3 class="title">Beach wallpaper</h3>
+                                <i class="icofont-heart"></i>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="img/b-5.jpg" alt="beach-5" />
+                            <div class="caption">
+                                <h3 class="title">Beach wallpaper</h3>
+                                <i class="icofont-heart"></i>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="img/b-6.jpg" alt="beach-6" />
+                            <div class="caption">
+                                <h3 class="title">Beach wallpaper</h3>
+                                <i class="icofont-heart"></i>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="img/b-7.jpg" alt="beach-7" />
+                            <div class="caption">
+                                <h3 class="title">Beach wallpaper</h3>
+                                <i class="icofont-heart"></i>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="img/b-8.jpg" alt="beach-8" />
+                            <div class="caption">
+                                <h3 class="title">Beach wallpaper</h3>
+                                <i class="icofont-heart"></i>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="img/b-9.jpg" alt="beach-9" />
+                            <div class="caption">
+                                <h3 class="title">Beach wallpaper</h3>
+                                <i class="icofont-heart"></i>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="img/b-10.jpg" alt="beach-10" />
+                            <div class="caption">
+                                <h3 class="title">Beach wallpaper</h3>
+                                <i class="icofont-heart"></i>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="img/b-10.jpg" alt="beach-10" />
+                            <div class="caption">
+                                <h3 class="title">Beach wallpaper</h3>
+                                <i class="icofont-heart"></i>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="img/b-10.jpg" alt="beach-10" />
+                            <div class="caption">
+                                <h3 class="title">Beach wallpaper</h3>
+                                <i class="icofont-heart"></i>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="img/b-10.jpg" alt="beach-10" />
+                            <div class="caption">
+                                <h3 class="title">Beach wallpaper</h3>
+                                <i class="icofont-heart"></i>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="img/b-10.jpg" alt="beach-10" />
+                            <div class="caption">
+                                <h3 class="title">Beach wallpaper</h3>
+                                <i class="icofont-heart"></i>
+                            </div>
+                        </li> -->
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="section gallery" id="gall">
+            <div class="container">
+                <ul class="gallery__list" id="galleryUl">
+                    <!-- <a href="#">
+                        <li>
+                            <img src="img/b-1.jpg" alt="beach-1" />
+                            <div class="caption">
+                                <h3 class="title">Beach wallpaper</h3>
+                                <i class="icofont-heart"></i>
+                            </div>
+                        </li>
+
+                    </a>
+                    <li>
+                        <img src="img/b-2.jpg" alt="beach-2" />
+                        <div class="caption">
+                            <h3 class="title">Beach wallpaper</h3>
+                            <i class="icofont-heart"></i>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="img/b-3.jpg" alt="beach-3" />
+                        <div class="caption">
+                            <h3 class="title">Beach wallpaper</h3>
+                            <i class="icofont-heart"></i>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="img/b-4.jpg" alt="beach-4" />
+                        <div class="caption">
+                            <h3 class="title">Beach wallpaper</h3>
+                            <i class="icofont-heart"></i>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="img/b-5.jpg" alt="beach-5" />
+                        <div class="caption">
+                            <h3 class="title">Beach wallpaper</h3>
+                            <i class="icofont-heart"></i>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="img/b-6.jpg" alt="beach-6" />
+                        <div class="caption">
+                            <h3 class="title">Beach wallpaper</h3>
+                            <i class="icofont-heart"></i>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="img/b-7.jpg" alt="beach-7" />
+                        <div class="caption">
+                            <h3 class="title">Beach wallpaper</h3>
+                            <i class="icofont-heart"></i>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="img/b-8.jpg" alt="beach-8" />
+                        <div class="caption">
+                            <h3 class="title">Beach wallpaper</h3>
+                            <i class="icofont-heart"></i>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="img/b-9.jpg" alt="beach-9" />
+                        <div class="caption">
+                            <h3 class="title">Beach wallpaper</h3>
+                            <i class="icofont-heart"></i>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="img/b-10.jpg" alt="beach-10" />
+                        <div class="caption">
+                            <h3 class="title">Beach wallpaper</h3>
+                            <i class="icofont-heart"></i>
+                        </div>
+                    </li> -->
+                </ul>
+                <div class="my-3">
+                    <button class="btn btn__gallery" id="load-more">
+                        <i class="icofont-spinner-alt-3"></i>
+                        Load more
+                    </button>
+                    <button class="btn btn__gallery btn__gallery--likes" >
+                        <i class="icofont-heart"></i>
+                    </button>
+                    <button class="btn btn__gallery" id="gotoFront">
+                        <a href="#frnt">
+                            <i class="icofont-reply"></i>
+                            Back to search
+                        </a>
+                    </button>
+                </div>
+            </div>
+            <!-- <div class="loader">
+                <svg>
+                    <use xlink:href="css/icofont/fonts/icomoon.svg#icon-spinner2"></use>
+                </svg>
+            </div> -->
+        </section>
+
+        <section class="item">
+            <div class="container">
+                <div>
+                    <button class="btn btn__back p1" id="gotoGallery">
+                        <i class="icofont-reply"></i>
+                    </button>
+
+                    <div class="image m1">
+                        <!-- <div>
+                            <figure>
+                                <img src="img/b-1.jpg" alt="b-1" />
+                                <figcaption>
+                                    <span class="author">Michal S.</span>
+                                    <span class="title">Beach paradise</span>
+                                    <span class="views">183 625 views</span>
+                                    <span class="image__like">
+                                        <i class="icofont-heart"></i>
+                                    </span>
+                                </figcaption>
+                            </figure>
+                        </div> -->
+                    </div>
+                    
+                    <div id="map" class="m1">
+                        <!-- <img src="img/mapa-min.png" alt="mapa" /> -->
+                        <!-- <p class="error">Sorry for the selected image location and weather information can't be found...</p> -->
+                    </div>
+                    
+                    <div class="weather m1">
+                        <!--ul class="list">
+                            <li>
+                                <p class="day">Monday</p>
+                                <p class="date">06/12</p>
+                            </li>
+    
+                            <li>
+                                <img
+                                    src="img/WeatherIcons/07.png"
+                                    alt="Slika"
+                                />
+                            </li>
+    
+                            <li>
+                                <p class="temp">
+                                    <span class="max">8</span> /
+                                    <span class="min">1&#8451;</span>
+                                </p>
+                                <p class="realtemp">
+                                    <span class="max">3</span> /
+                                    <span class="min">1&#8451;</span>
+                                </p>
+                            </li>
+    
+                            <li>
+                                <p class="wind">
+                                    Wind:
+                                    <span>11.1km/h ENE</span>
+                                </p>
+                            </li>
+    
+                            <li>
+                                <p class="description">Fog early, then cloudy</p>
+                            </li>
+                            <li>
+                                <p>Air quality: <span class="air">Good</span></p>
+                            </li>
+                        </!--ul>
+    
+                        <ul class="list">
+                            <li>
+                                <p class="day">Monday</p>
+                                <p class="date">06/12</p>
+                            </li>
+    
+                            <li>
+                                <img
+                                    src="img/WeatherIcons/04.png"
+                                    alt="Slika"
+                                />
+                            </li>
+    
+                            <li>
+                                <p class="temp">
+                                    <span class="max">8</span> /
+                                    <span class="min">1&#8451;</span>
+                                </p>
+                                <p class="realtemp">
+                                    <span class="max">3</span> /
+                                    <span class="min">1&#8451;</span>
+                                </p>
+                            </li>
+    
+                            <li>
+                                <p class="wind">
+                                    Wind:
+                                    <span>11.1km/h ENE</span>
+                                </p>
+                            </li>
+    
+                            <li>
+                                <p class="description">Fog early, then cloudy</p>
+                            </li>
+                            <li>
+                                <p>Air quality: <span class="air">Good</span></p>
+                            </li>
+                        </ul>
+    
+                        <ul class="list">
+                            <li>
+                                <p class="day">Monday</p>
+                                <p class="date">06/12</p>
+                            </li>
+    
+                            <li>
+                                <img
+                                    src="img/WeatherIcons/01.png"
+                                    alt="Slika"
+                                />
+                            </li>
+    
+                            <li>
+                                <p class="temp">
+                                    <span class="max">8</span> /
+                                    <span class="min">1&#8451;</span>
+                                </p>
+                                <p class="realtemp">
+                                    <span class="max">3</span> /
+                                    <span class="min">1&#8451;</span>
+                                </p>
+                            </li>
+    
+                            <li>
+                                <p class="wind">
+                                    Wind:
+                                    <span>11.1km/h ENE</span>
+                                </p>
+                            </li>
+    
+                            <li>
+                                <p class="description">Fog early, then cloudy</p>
+                            </li>
+                            <li>
+                                <p>Air quality: <span class="air">Good</span></p>
+                            </li>
+                        </ul>
+    
+                        <ul class="list">
+                            <li>
+                                <p class="day">Monday</p>
+                                <p class="date">06/12</p>
+                            </li>
+    
+                            <li>
+                                <img
+                                    src="img/WeatherIcons/25.png"
+                                    alt="Slika"
+                                />
+                            </li>
+    
+                            <li>
+                                <p class="temp">
+                                    <span class="max">8</span> /
+                                    <span class="min">1&#8451;</span>
+                                </p>
+                                <p class="realtemp">
+                                    <span class="max">3</span> /
+                                    <span class="min">1&#8451;</span>
+                                </p>
+                            </li>
+    
+                            <li>
+                                <p class="wind">
+                                    Wind:
+                                    <span>11.1km/h ENE</span>
+                                </p>
+                            </li>
+    
+                            <li>
+                                <p class="description">Fog early, then cloudy</p>
+                            </li>
+                            <li>
+                                <p>Air quality: <span class="air">Good</span></p>
+                            </li>
+                        </ul>
+    
+                        <ul class="list">
+                            <li>
+                                <p class="day">Monday</p>
+                                <p class="date">06/12</p>
+                            </li>
+    
+                            <li>
+                                <img
+                                    src="img/WeatherIcons/44.png"
+                                    alt="Slika"
+                                />
+                            </li>
+    
+                            <li>
+                                <p class="temp">
+                                    <span class="max">8</span> /
+                                    <span class="min">1&#8451;</span>
+                                </p>
+                                <p class="realtemp">
+                                    <span class="max">3</span> /
+                                    <span class="min">1&#8451;</span>
+                                </p>
+                            </li>
+    
+                            <li>
+                                <p class="wind">
+                                    Wind:
+                                    <span>11.1km/h ENE</span>
+                                </p>
+                            </li>
+    
+                            <li>
+                                <p class="description">Fog early, then cloudy</p>
+                            </li>
+                            <li>
+                                <p>Air quality: <span class="air">Good</span></p>
+                            </li>
+                        </ul>-->
+                    </div>
+                </div> 
+
+            </div>
+        </section>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="js/jquery.waypoints.min.js"></script>
+        <script src="js/typeWriter.js"></script>
+
+        <!-- console log  izbacivaće grešku jer inicijalna strana ne sadrži #map element koji skripta ispod trazi-->
+        <script
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAoWNGUPJOoVMR9J27anaGYyQkjXU7NEJY&callback=initMap"
+        ></script>
+    <script type="text/javascript" src="js/bundle.js"></script></body>
+</html>
