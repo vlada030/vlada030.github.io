@@ -9,9 +9,11 @@
     --color-orange-dark: rgba(255, 72, 0, 0.925);
     --font-color-2: #0d1566;
     --radius: 0.5rem;
+    --radius-large: 5rem;
     --transition: all 0.3s;
     --shadow: 0px 13px 29px -8px rgba(0, 0, 0, 0.73);
     --shadow-light: 5px 8px 9px 0px rgba(0,0,0,0.26);
+    --box-shadow-menu: 0 0 4px var(--color-tertiary), 0 0 12px var(--color-tertiary), 0 0 22px var(--color-tertiary);
     --text-shadow: 0 0 10px var(--color-primary), 0 0 20px var(--color-primary),
         0 0 50px var(--color-primary), 0 0 90px var(--color-primary);
     --text-shadow-light: 4px 0px 12px var(--color-primary);
@@ -166,6 +168,75 @@ i {
     z-index: 5;
 }
 
+.theme-toggle {
+    display: none;
+    position: fixed;
+    top: 5vh;
+    right: 5vw;
+
+    width: 50px;
+    height: auto;
+    border-radius: 50px;
+
+    background-color: var(--color-white);
+
+    z-index: 10;
+}
+
+.theme-toggle__title {
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+
+    border: 0;
+    background-color: transparent;
+}
+
+.theme-toggle__title i {
+    margin: 0;
+}
+
+.theme-toggle__list {
+    height: 0;
+    overflow: hidden;
+    transition: var(--transition);
+
+}
+
+.theme-toggle:hover .theme-toggle__list {
+    height: 130px;
+    padding-top: 10px;
+
+}
+
+.theme-toggle .theme-toggle__item {
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    cursor: pointer;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    transition: var(--transition);
+}
+
+.theme-toggle .theme-toggle__item:hover {
+    border: 3px solid var(--color-tertiary);
+    box-shadow: var(--box-shadow-menu);
+}
+
+.theme-toggle__item--dark {
+    background-color: black;
+}
+.theme-toggle__item--light {
+    background-color: white;
+}
+.theme-toggle__item--custom {
+    background-color: greenyellow;
+}
+
+
 .nav-desktop ul,
 .nav-mobile ul {
     list-style: none;
@@ -185,9 +256,8 @@ i {
     font-size: 1.8rem;
     color: var(--color-tertiary);
     border: 2px solid transparent;
-    border-radius: 5rem;
-    box-shadow: 0 0 4px var(--color-tertiary), 0 0 12px var(--color-tertiary),
-        0 0 22px var(--color-tertiary);
+    border-radius: var(--radius-large);
+    box-shadow: var(--box-shadow-menu);
     background-color: var(--color-primary-light);
     transition: var(--transition);
     padding: 0.25rem 1.5rem;
@@ -197,7 +267,7 @@ i {
 .nav-desktop .btn:hover {
     box-shadow: 0 0 6px var(--color-tertiary), 0 0 16px var(--color-tertiary),
         0 0 32px var(--color-tertiary);
-    text-shadow: 0 0 15px var(--color-tertiary);
+    color: var(--color-white);
 }
 
 .nav-desktop .btn.active,
@@ -335,6 +405,10 @@ i {
 
     #nav-icon3 {
         display: none;
+    }
+
+    .theme-toggle {
+        display: block;
     }
 }
 
