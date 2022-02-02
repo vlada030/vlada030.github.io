@@ -771,17 +771,18 @@ i {
     padding: 1rem;
     border-right: 1px solid var(--color-primary-light);
     border-bottom: 1px solid var(--color-primary-light);
+    border-radius: var(--radius);
     box-shadow: var(--shadow-light);
     margin-bottom: 3rem;
 
-    scale: 1;
+    opacity: 1;
     visibility: visible;
     height: 100%;
     transition: var(--transition);
 }
 
 .tips-wrapper .tips-item.hide {
-    scale: 0;
+    opacity: 0;
     visibility: hidden;
     height: 0;
     padding: 0;
