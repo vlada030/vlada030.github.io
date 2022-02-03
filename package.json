@@ -4,9 +4,19 @@
   "description": "",
   "main": "index.html",
   "scripts": {
-    
+    "dev": "webpack --watch --mode development",
+    "start": "webpack serve --mode development",
+    "build": "cross-env NODE_ENV=production webpack --mode production"
   },
   "keywords": [],
   "author": "Vladimir Nikodijevic",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.17.0",
+    "@babel/preset-env": "^7.16.11",
+    "babel-loader": "^8.2.3",
+    "cross-env": "^7.0.3",
+    "webpack": "^5.68.0",
+    "webpack-cli": "^4.9.2"
+  }
 }

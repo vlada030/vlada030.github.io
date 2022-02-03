@@ -4,26 +4,8 @@ document.addEventListener("DOMContentLoaded", () => {
         "nav-mobile__theme-icon"
     );
     const mobileMenu = document.querySelector(".nav-mobile__menu");
-
-    const landingPageSection = document.getElementById("section_landing_page");
-    const aboutSection = document.getElementById("section_about");
-    const projectsSection = document.getElementById("section_projects");
-    const tipsSection = document.getElementById("section_tips");
-    const contactSection = document.getElementById("section_contact");
-
-    // const aboutSectionBtnList = document.querySelectorAll(
-    //     "[data-aboutSectionBtn]"
-    // );
-    // const projectsSectionBtnList = document.querySelectorAll(
-    //     "[data-projectsSectionBtn]"
-    // );
-    // const tipsSectionBtnList = document.querySelectorAll(
-    //     "[data-tipsSectionBtn]"
-    // );
-    // const contactSectionBtnList = document.querySelectorAll(
-    //     "[data-contactSectionBtn]"
-    // );
-
+    
+    // add the current year
     // const currentYearHolder = document.getElementById('year')
 
     // // current year at the bootom of the page
