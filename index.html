@@ -48,17 +48,17 @@
         <nav class="nav-desktop">
             <ul>
                 <li>
-                    <button class="btn" data-aboutSectionBtn="true">About</button>
+                    <button class="btn" data-type=about>About</button>
                 </li>
                 <li>
-                    <button class="btn" data-projectsSectionBtn="true">Projects</button>
+                    <button class="btn" data-type=projects>Projects</button>
                 </li>
 
                 <li>
-                    <button class="btn" data-tipsSectionBtn="true">Tips</button>
+                    <button class="btn" data-type=tips>Tips</button>
                 </li>
                 <li>
-                    <button class="btn" data-contactSectionBtn="true">Contact</button>
+                    <button class="btn" data-type=contact>Contact</button>
                 </li>
             </ul>
         </nav>
@@ -66,16 +66,16 @@
         <nav class="nav-mobile__menu">
             <ul>
                 <li>
-                    <button class="btn" data-aboutSectionBtn="true">About</button>
+                    <button class="btn" data-type=about>About</button>
                 </li>
                 <li>
-                    <button class="btn" data-projectsSectionBtn="true">Projects</button>
+                    <button class="btn" data-type=projects>Projects</button>
                 </li>
                 <li>
-                    <button class="btn" data-tipsSectionBtn="true">Tips</button>
+                    <button class="btn" data-type=tips>Tips</button>
                 </li>
                 <li>
-                    <button class="btn" data-contactSectionBtn="true">Contact</button>
+                    <button class="btn" data-type=contact>Contact</button>
                 </li>
             </ul>
         </nav>
@@ -99,7 +99,7 @@
         </div>
 
 
-        <section class="section landing_page show" id="section_landing_page">
+        <section class="section landing_page show" id="section_landing_page" data-type>
             <div class="landing_page-wrapper">
                 <div class="landing_page-title">
                     <h3>
@@ -117,7 +117,7 @@
             </div>
         </section>
 
-        <section class="section" id='section_about'>
+        <section class="section" data-type=about>
             <div class="about-wrapper">
                 <img class="about_image" src="./resources/img/about_page-min.png" alt="technologie_img">
                 <h3>about me</h3>
@@ -176,6 +176,9 @@
                     <li class="tech-logo--item">
                         <img class="tech-logo--img" src="./resources/img/tech_logos/vscode_logo.jpg" alt="logo">
                     </li>
+                    <li class="tech-logo--item">
+                        <img class="tech-logo--img" src="./resources/img/tech_logos/webpack_logo.png" alt="logo">
+                    </li>
                 </ul>
 
                 <p>I absolutely love learning new things and taking on new challenges. A more detailed look at my
@@ -184,7 +187,7 @@
             </div>
         </section>
 
-        <section class="section" id='section_projects'>
+        <section class="section" data-type=projects>
             <div class="projects-wrapper">
                 <div class='projects-intro underline'>
                     <h4>Projects</h4>
@@ -732,7 +735,7 @@
             </div>
         </section>
 
-        <section class="section" id="section_tips">
+        <section class="section" data-type=tips>
             <div class="tips-wrapper">
                 <h4>Tips</h4>
                 <p>This section contains a list of resources that helped me a lot in my learning journey. Thanks to the authors of the text, I adopted the technology in a much easier and better way. I put them in this section as a reminder for a future use.</p>
@@ -851,7 +854,7 @@
             </div>
         </section>
 
-        <section class="section" id="section_contact">
+        <section class="section" data-type=contact>
             <div class="contact-wrapper">
                 <img src="./resources/img/contact_page.webp" alt="contatc">
                 <h4>Contact</h4>
