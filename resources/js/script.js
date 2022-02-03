@@ -1,7 +1,8 @@
 document.addEventListener("DOMContentLoaded", () => {
 
-    const mobileNavToggleBtn = document.getElementById("nav-icon3");
-    const mobileMenu = document.querySelector(".nav-mobile");
+    const mobileNavToggleBtn = document.getElementById("nav-mobile__menu-icon");
+    const mobileThemeToggleBtn = document.getElementById("nav-mobile__theme-icon");
+    const mobileMenu = document.querySelector(".nav-mobile__menu");
     
     const landingPageSection = document.getElementById("section_landing_page");
     const aboutSection = document.getElementById("section_about");
@@ -28,6 +29,10 @@ document.addEventListener("DOMContentLoaded", () => {
     // // current year at the bootom of the page
     // const currentYear = new Date().getFullYear()
     // currentYearHolder.innerText = `${currentYear}`;
+
+    mobileThemeToggleBtn.addEventListener('click', () => {
+        document.getElementById('nav-mobile__theme-list').classList.toggle('show')
+    })
 
     // toggle mobile menu view
     mobileNavToggleBtn.addEventListener("click", (e) => {
@@ -217,11 +222,14 @@ function initializeTheme() {
 
     document.body.className = "";
     document.body.classList.add(theme);
-    document.querySelector(`button[data-type="${theme}"]`).classList.add('active')
+    // add class to both mobile and desktop menu
+    const btnList = document.querySelectorAll(`button[data-type="${theme}"]`)
+    btnList.forEach(btn => {
+        btn.classList.add("active");
+    })
 }
 
 initializeTheme();
-
 
 [...themeBtnList].forEach( btn => {
     btn.addEventListener('click', () => {

@@ -63,7 +63,7 @@
             </ul>
         </nav>
 
-        <nav class="nav-mobile">
+        <nav class="nav-mobile__menu">
             <ul>
                 <li>
                     <button class="btn" data-aboutSectionBtn="true">About</button>
@@ -80,12 +80,24 @@
             </ul>
         </nav>
 
-        <button id="nav-icon3">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-        </button>
+        <div class="nav-mobile">
+            <div id="nav-mobile__theme-icon" class="theme-toggle theme-toggle--mobile">
+                <button id="nav-mobile__theme-icon" class="theme-toggle__title theme-toggle__title--mobile"><i class="fas fa-highlighter"></i></button>
+                <div class="theme-toggle__list" id="nav-mobile__theme-list">
+                    <button data-type=dark class="theme-toggle__item theme-toggle__item--dark"></button>
+                    <button data-type=light class="theme-toggle__item theme-toggle__item--light"></button>
+                    <button data-type=custom class="theme-toggle__item theme-toggle__item--custom"></button>
+                </div>
+            </div>
+
+            <button id="nav-mobile__menu-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+
 
         <section class="section landing_page show" id="section_landing_page">
             <div class="landing_page-wrapper">
