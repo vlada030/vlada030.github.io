@@ -226,9 +226,12 @@ i {
     transition: var(--transition);
 }
 
-.theme-toggle:hover .theme-toggle__list {
+
+@media screen and (min-width: 1024px){
+    .theme-toggle:hover .theme-toggle__list {
     height: 130px;
     padding-top: 10px;
+}
 }
 
 .theme-toggle .theme-toggle__list.show {
@@ -248,9 +251,11 @@ i {
     transition: var(--transition);
 }
 
-.theme-toggle .theme-toggle__item:hover {
-    border: 3px solid var(--color-tertiary);
-    box-shadow: var(--box-shadow-menu);
+@media screen and (min-width: 1024px){
+    .theme-toggle .theme-toggle__item:hover {
+        border: 3px solid var(--color-tertiary);
+        box-shadow: var(--box-shadow-menu);
+    }    
 }
 
 .theme-toggle .theme-toggle__item.active {
