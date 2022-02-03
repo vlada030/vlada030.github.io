@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
+
     const mobileNavToggleBtn = document.getElementById("nav-icon3");
     const mobileMenu = document.querySelector(".nav-mobile");
     
@@ -21,13 +22,6 @@ document.addEventListener("DOMContentLoaded", () => {
         "[data-contactSectionBtn]"
     ); 
 
-    const tipsBtnAll = document.getElementById('all')
-    const tipsBtnHTML = document.getElementById('html')
-    const tipsBtnCSS = document.getElementById('css')
-    const tipsBtnJS = document.getElementById('js')
-    const tipsBtnReact = document.getElementById('react')
-    const tipsBtnNode = document.getElementById('node')
-    const tipsBtnUtilities = document.getElementById('utilities')
 
     // const currentYearHolder = document.getElementById('year')
 
@@ -47,16 +41,18 @@ document.addEventListener("DOMContentLoaded", () => {
         spaceBetween: 30,
         centeredSlides: true,
         loop: true,
+        // LAZY LOADING
         // Disable preloading of all images
-        preloadImages: false,
+        //preloadImages: false,
         // Enable lazy loading
-        lazy: true,
-        loadPrevNext: true,
+        //lazy: true,
+
         // effect: 'fade',
         // autoplay: {
         //   delay: 2500,
         //   disableOnInteraction: false,
         // },
+
         // If we need pagination
         pagination: {
             el: ".swiper-pagination",
@@ -194,3 +190,102 @@ const tipsBtnList = document.querySelectorAll('.btn-wrapper .btn');
         })
     })
 })
+
+// theme toggle
+
+function getFromLocalStorage(item) {
+    return localStorage.getItem(item)
+}
+
+function setToLocalStorage(name, value) {
+    localStorage.setItem(name, value)
+}
+
+const themeBtnList = document.querySelectorAll('.theme-toggle__item');
+
+function initializeTheme() {
+    // check for localy saved theme
+    const localTheme = getFromLocalStorage("theme");
+    // check for system theme
+    const systemTheme = window.matchMedia("(prefers-color-scheme: dark)")
+        .matches
+        ? "dark"
+        : "light";
+
+    // localy saved has precedence over system theme
+    const theme = localTheme ? localTheme : systemTheme;
+
+    document.body.className = "";
+    document.body.classList.add(theme);
+    document.querySelector(`button[data-type="${theme}"]`).classList.add('active')
+}
+
+initializeTheme();
+
+
+[...themeBtnList].forEach( btn => {
+    btn.addEventListener('click', () => {
+        const btnType = btn.dataset.type;
+
+        // ukoliko je 
+        if (btnType === 'dark') {
+            // postavi active klasu na btns
+            [...themeBtnList].forEach(btn => {
+                if (btn.dataset.type === 'dark') {
+                    btn.classList.toggle('active', true)
+                } else {
+                    btn.classList.toggle("active", false);
+                }
+                
+            })
+
+            // postavi klasu na body tag
+            document.body.className = "";
+            document.body.classList.add(btnType);
+
+            // zapamti u local storage
+            setToLocalStorage("theme", btnType);
+
+            return
+        }
+
+        if (btnType === 'light') {
+            [...themeBtnList].forEach((btn) => {
+                if (btn.dataset.type === "light") {
+                    btn.classList.toggle("active", true);
+                } else {
+                    btn.classList.toggle("active", false);
+                }
+            });
+
+            // postavi klasu na body tag
+            document.body.className = "";
+            document.body.classList.add(btnType);
+
+            // zapamti u local storage
+            setToLocalStorage("theme", btnType);
+
+            return;
+        }
+
+        if (btnType === "custom") {
+            [...themeBtnList].forEach((btn) => {
+                if (btn.dataset.type === "custom") {
+                    btn.classList.toggle("active", true);
+                } else {
+                    btn.classList.toggle("active", false);
+                }
+            });
+
+            // postavi klasu na body tag
+            document.body.className = "";
+            document.body.classList.add(btnType);
+
+            // zapamti u local storage
+            setToLocalStorage("theme", btnType);
+
+            return;
+        }
+
+    })
+});
