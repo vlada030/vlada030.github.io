@@ -1,0 +1,893 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-154361865-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'UA-154361865-1');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Welcome to my portfolio page. I am front-end developer working remotely."/>
+    <meta name="keywords" content="portfolio, portfolio page, front-end, developer, front-end developer, web developer, hire, job, full-time, part-time"/>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/resources/css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@6/swiper-bundle.min.css" />
+    <script src="https://kit.fontawesome.com/fdbde51eb4.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/swiper@6/swiper-bundle.min.js"></script>
+    <script src="/resources/js/build/index.js" defer></script>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/resources/img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/resources/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/resources/img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/resources/img/favicon/site.webmanifest">
+    <link rel="mask-icon" href="/resources/img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="/resources/img/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="/resources/img/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+
+    <title>Portfolio | Vladimir Front-end Developer</title>
+</head>
+
+<body>
+    <main>
+        <div class="theme-toggle">
+            <button class="theme-toggle__title"  aria-hidden="true"><i class="fas fa-highlighter"></i></button>
+            <div class="theme-toggle__list">
+                <button data-type=dark class="theme-toggle__item theme-toggle__item--dark" aria-hidden="true"></button>
+                <button data-type=light class="theme-toggle__item theme-toggle__item--light" aria-hidden="true"></button>
+                <button data-type=custom class="theme-toggle__item theme-toggle__item--custom" aria-hidden="true"></button>
+            </div>
+        </div>
+
+        <nav class="nav-desktop">
+            <ul>
+                <li>
+                    <button class="btn" data-type=about>About</button>
+                </li>
+                <li>
+                    <button class="btn" data-type=projects>Projects</button>
+                </li>
+
+                <li>
+                    <button class="btn" data-type=tips>Tips</button>
+                </li>
+                <li>
+                    <button class="btn" data-type=contact>Contact</button>
+                </li>
+            </ul>
+        </nav>
+
+        <nav class="nav-mobile__menu">
+            <ul>
+                <li>
+                    <button class="btn" data-type=about>About</button>
+                </li>
+                <li>
+                    <button class="btn" data-type=projects>Projects</button>
+                </li>
+                <li>
+                    <button class="btn" data-type=tips>Tips</button>
+                </li>
+                <li>
+                    <button class="btn" data-type=contact>Contact</button>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="nav-mobile">
+            <div id="nav-mobile__theme-icon" class="theme-toggle theme-toggle--mobile">
+                <button id="nav-mobile__theme-icon" class="theme-toggle__title theme-toggle__title--mobile"  aria-hidden="true"><i class="fas fa-highlighter"></i></button>
+                <div class="theme-toggle__list" id="nav-mobile__theme-list">
+                    <button data-type=dark class="theme-toggle__item theme-toggle__item--dark" aria-hidden="true"></button>
+                    <button data-type=light class="theme-toggle__item theme-toggle__item--light" aria-hidden="true"></button>
+                    <button data-type=custom class="theme-toggle__item theme-toggle__item--custom" aria-hidden="true"></button>
+                </div>
+            </div>
+
+            <button id="nav-mobile__menu-icon" aria-label="Open or Close Mobile Navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+
+        <section class="section landing_page show" id="section_landing_page" data-type>
+            <div class="landing_page-wrapper">
+                <div class="landing_page-title">
+                    <h3>
+                        <i class="far fa-grin before-icon"></i>
+                        Hello!
+                        <i class="far fa-handshake after-icon"></i>
+                    </h3>
+                    <h1>Welcome to my web presentation</h1>
+                </div>
+
+                <div class="landing_page-body">
+                    <p>My name is Vladimir,</p>
+                    <p>and I'm a Front-end Developer working remotely out of Serbia!</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" data-type=about>
+            <div class="about-wrapper">
+                <img class="about_image" src="./resources/img/about_page-min.png" alt="technologie_img">
+                <h3>about me</h3>
+                <p class="underline"></p>
+                <p>My name is Vladimir, and I'm a Front-end Developer working remotely out of Serbia.</p>
+                <p>Coding is my passion and hobby since my college days. Last couple of years I put an effort to raise
+                    my coding knowledge on higher level. I have learned and am still learning new technologies to
+                    fulfill the role of a competent front-end developer, but also with the desire to become a full-stack
+                    developer in the near future.</p>
+                <p>My development workflow is something I've been constantly working on over the years, and it's always
+                    evolving as I
+                    discover new tips, tools, methods or applications.</p>
+                <p>This is the list of technologies that I used in my projects:</p>
+                <ul class="tech-logo--list">
+                    <li class="tech-logo--item">
+                        <img class="tech-logo--img" src="./resources/img/tech_logos/html_logo.png" alt="logo">
+                    </li>
+                    <li class="tech-logo--item">
+                        <img class="tech-logo--img" src="./resources/img/tech_logos/css_logo.jpg" alt="logo">
+                    </li>
+                    <li class="tech-logo--item">
+                        <img class="tech-logo--img" src="./resources/img/tech_logos/scss_logo.png" alt="logo">
+                    </li>
+                    <li class="tech-logo--item">
+                        <img class="tech-logo--img" src="./resources/img/tech_logos/bootstrap_logo.jpg" alt="logo">
+                    </li>
+                    <li class="tech-logo--item">
+                        <img class="tech-logo--img" src="./resources/img/tech_logos/logo_javascript.png" alt="logo">
+                    </li>
+                    <li class="tech-logo--item">
+                        <img class="tech-logo--img" src="./resources/img/tech_logos/reactjs_logo.png" alt="logo">
+                    </li>
+                    <li class="tech-logo--item">
+                        <img class="tech-logo--img" src="./resources/img/tech_logos/nodeJS_logo.png" alt="logo">
+                    </li>
+                    <li class="tech-logo--item">
+                        <img class="tech-logo--img" src="./resources/img/tech_logos/express_logo.png" alt="logo">
+                    </li>
+                    <li class="tech-logo--item">
+                        <img class="tech-logo--img" src="./resources/img/tech_logos/mongodb_logo.png" alt="logo">
+                    </li>
+                    <li class="tech-logo--item">
+                        <img class="tech-logo--img" src="./resources/img/tech_logos/mocha_chai_logo.jpg" alt="logo">
+                    </li>
+                </ul>
+
+                <p>Tools I am using:</p>
+
+                <ul class="tech-logo--list">
+                    <li class="tech-logo--item">
+                        <img class="tech-logo--img" src="./resources/img/tech_logos/figma_logo.jpg" alt="logo">
+                    </li>
+                    <li class="tech-logo--item">
+                        <img class="tech-logo--img" src="./resources/img/tech_logos/git_logo.png" alt="logo">
+                    </li>
+                    <li class="tech-logo--item">
+                        <img class="tech-logo--img" src="./resources/img/tech_logos/vscode_logo.jpg" alt="logo">
+                    </li>
+                    <li class="tech-logo--item">
+                        <img class="tech-logo--img" src="./resources/img/tech_logos/webpack_logo.png" alt="logo">
+                    </li>
+                </ul>
+
+                <p>I absolutely love learning new things and taking on new challenges. A more detailed look at my
+                    capabilities is available in my Projects section.</p>
+
+            </div>
+        </section>
+
+        <section class="section" data-type=projects>
+            <div class="projects-wrapper">
+                <div class='projects-intro underline'>
+                    <h4>Projects</h4>
+                    <p>
+                        Here you can see projects for which I have been inspired by various needs and which I hope will present
+                        my knowledge and possibilities in the right way.
+                    </p>
+                    <p>
+                        At the end of the page I added a few projects from <a href="https://www.frontendmentor.io/" target="_blank" rel="noopener">Frontend Mentor</a>, a page dedicated to developers for improving front-end coding skills by building real projects. The goal is to build a project given as Figma sketch pixel perfect, among the others.</p>
+
+                </div>
+                <article class="card">
+                    <div class="card-body">
+                        <div class="swiper-container">
+                            <!-- Additional required wrapper -->
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="/resources/img/img-reports/reports-1.jpg">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="/resources/img/img-reports/reports-2.jpg">
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <img src="/resources/img/img-reports/reports-3.jpg">
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <img src="/resources/img/img-reports/reports-4.jpg">
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <img src="/resources/img/img-reports/reports-5.jpg">
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <img src="/resources/img/img-reports/reports-6.jpg">
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <img src="/resources/img/img-reports/reports-7.jpg">
+                                </div>
+                            </div>
+                            <!-- <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img data-src="/resources/img/img-reports/reports-1.jpg" class="swiper-lazy" />
+                                    <div class="swiper-lazy-preloader"></div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img data-src="/resources/img/img-reports/reports-2.jpg" class="swiper-lazy" />
+                                    <div class="swiper-lazy-preloader"></div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <img data-src="/resources/img/img-reports/reports-3.jpg" class="swiper-lazy" />
+                                    <div class="swiper-lazy-preloader"></div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <img data-src="/resources/img/img-reports/reports-4.jpg" class="swiper-lazy" />
+                                    <div class="swiper-lazy-preloader"></div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <img data-src="/resources/img/img-reports/reports-5.jpg" class="swiper-lazy" />
+                                    <div class="swiper-lazy-preloader"></div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <img data-src="/resources/img/img-reports/reports-6.jpg" class="swiper-lazy" />
+                                    <div class="swiper-lazy-preloader"></div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <img data-src="/resources/img/img-reports/reports-7.jpg" class="swiper-lazy" />
+                                    <div class="swiper-lazy-preloader"></div>
+                                </div>
+                            </div> -->
+                            <!-- If we need pagination -->
+                            <div class="swiper-pagination"></div>
+
+                            <!-- If we need navigation buttons -->
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <div class="title-wrapper">
+
+                            <h4>Reports</h4>
+
+                            <div class="links-wrapper">
+                                <a href='https://github.com/vlada030/reportsAPIv2' target="_blank" rel="noopener">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href='https://reportsapiv2.herokuapp.com/' target="_blank" rel="noopener">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+
+                            </div>
+                        </div>
+
+                        <p>Reports is an application used for creating and storing different type of reports. All
+                            reports are closely related to cable production factory.</p>
+                        <p>Short description:</p>
+                        <ul class="tech-logo-list">
+                            <li>Server-Side Rendering</li>
+                            <li>PUG template engine (Bootstrap)</li>
+                            <li>Authentication using sessions stored in MongoDB</li>
+                            <li>Enhanced security with additional NPM modules</li>
+                            <li>Tested using Mocha, Chai, Sinon</li>
+
+                        </ul>
+                        <ul class="tech-logo--list">
+                            <li class="tech-logo--item">
+                                <img class="tech-logo--img" src="./resources/img/tech_logos/nodeJS_logo.png" alt="logo">
+                            </li>
+                            <li class="tech-logo--item">
+                                <img class="tech-logo--img" src="./resources/img/tech_logos/mongodb_logo.png"
+                                    alt="logo">
+                            </li>
+                            <li class="tech-logo--item">
+                                <img class="tech-logo--img" src="./resources/img/tech_logos/bootstrap_logo.jpg"
+                                    alt="logo">
+                            </li>
+                            <li class="tech-logo--item">
+                                <img class="tech-logo--img" src="./resources/img/tech_logos/mocha_chai_logo.jpg"
+                                    alt="logo">
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="card-body">
+
+                        <div class="swiper-container">
+                            <!-- Additional required wrapper -->
+                            <div class="swiper-wrapper">
+                                <!-- Slides -->
+                                <div class="swiper-slide">
+                                    <img src="/resources/img/img-teashop/teashop-1.jpg">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="/resources/img/img-teashop/teashop-2.jpg">
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <img src="/resources/img/img-teashop/teashop-3.jpg">
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <img src="/resources/img/img-teashop/teashop-4.jpg">
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <img src="/resources/img/img-teashop/teashop-5.jpg">
+                                </div>
+                            </div>
+                            <!-- If we need pagination -->
+                            <div class="swiper-pagination"></div>
+
+                            <!-- If we need navigation buttons -->
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <div class="title-wrapper">
+
+                            <h4>Teashop</h4>
+
+                            <div class="links-wrapper">
+                                <a href='https://github.com/vlada030/teashop' target="_blank" rel="noopener">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href='https://teashopapp.herokuapp.com/' target="_blank" rel="noopener">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+
+                            </div>
+                        </div>
+
+                        <p>Teashop is an application for shoping different sorts of tea.</p>
+
+                        <p>Short description:</p>
+
+                        <ul>
+                            <li>Custom-built user authorization</li>
+                            <li>User / Admin authentication - different user interface</li>
+                            <li>React Context API (useReducer)</li>
+                            <li>Tested using Jest & React Testing Library</li>
+                            <li>Styled components</li>
+
+                        </ul>
+                        <ul class="tech-logo--list">
+                            <li class="tech-logo--item">
+                                <img class="tech-logo--img" src="./resources/img/tech_logos/mongodb_logo.png"
+                                    alt="logo">
+                            </li>
+                            <li class="tech-logo--item">
+                                <img class="tech-logo--img" src="./resources/img/tech_logos/express_logo.png"
+                                    alt="logo">
+                            </li>
+                            <li class="tech-logo--item">
+                                <img class="tech-logo--img" src="./resources/img/tech_logos/reactjs_logo.png"
+                                    alt="logo">
+                            </li>
+                            <li class="tech-logo--item">
+                                <img class="tech-logo--img" src="./resources/img/tech_logos/nodeJS_logo.png" alt="logo">
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="card-body">
+
+                        <div class="swiper-container">
+                            <!-- Additional required wrapper -->
+                            <div class="swiper-wrapper">
+                                <!-- Slides -->
+                                <div class="swiper-slide">
+                                    <img src="/resources/img/img-smoothies/smoothies-1.jpg">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="/resources/img/img-smoothies/smoothies-2.jpg">
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <img src="/resources/img/img-smoothies/smoothies-3.jpg">
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <img src="/resources/img/img-smoothies/smoothies-4.jpg">
+                                </div>
+                            </div>
+                            <!-- If we need pagination -->
+                            <div class="swiper-pagination"></div>
+
+                            <!-- If we need navigation buttons -->
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <div class="title-wrapper">
+
+                            <h4>Smoothies</h4>
+
+                            <div class="links-wrapper">
+                                <a href='https://github.com/vlada030/smoothie' target="_blank" rel="noopener">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href='https://smoothieapp1.herokuapp.com/' target="_blank" rel="noopener">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+
+                            </div>
+                        </div>
+
+                        <p>Smoothies is blog page about smoothies, sorts of and their preparation.</p>
+                        <p>Short description:</p>
+                        <ul>
+                            <li>Language toggle Serbian / English</li>
+                            <li>Dark / light theme toggle</li>
+                            <li>Pagination</li>
+                            <li>Integration with Firebase</li>
+                        </ul>
+                        <ul class="tech-logo--list">
+                            <li class="tech-logo--item">
+                                <img class="tech-logo--img" src="./resources/img/tech_logos/reactjs_logo.png"
+                                    alt="logo">
+                            </li>
+                            <li class="tech-logo--item">
+                                <img class="tech-logo--img" src="./resources/img/tech_logos/css_logo.jpg" alt="logo">
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="card-body">
+
+                        <div class="swiper-container">
+                            <!-- Additional required wrapper -->
+                            <div class="swiper-wrapper">
+                                <!-- Slides -->
+                                <div class="swiper-slide">
+                                    <img src="/resources/img/img-nmv2/nm-1.jpg">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="/resources/img/img-nmv2/nm-2.jpg">
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <img src="/resources/img/img-nmv2/nm-3.jpg">
+                                </div>
+                            </div>
+                            <!-- If we need pagination -->
+                            <div class="swiper-pagination"></div>
+
+                            <!-- If we need navigation buttons -->
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <div class="title-wrapper">
+
+                            <h4>Napon-Mont v2</h4>
+
+                            <div class="links-wrapper">
+                                <a href='https://github.com/vlada030/napon-mont-v2' target="_blank" rel="noopener">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href='./resources/pages/napon-montV2/index.html' target="_blank" rel="noopener">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+
+                            </div>
+                        </div>
+
+                        <p>Napon-Mont v2 is blog page that presents all services of electrical company that offers.</p>
+                        <p>Short description:</p>
+                        <ul>
+                            <li>Built using Bootstrap and it's predefined classes for carousel, navigation bar, lists,
+                                lightboxes...</li>
+
+                        </ul>
+                        <ul class="tech-logo--list">
+                            <li class="tech-logo--item">
+                                <img class="tech-logo--img" src="./resources/img/tech_logos/bootstrap_logo.jpg"
+                                    alt="logo">
+                            </li>
+                            <li class="tech-logo--item">
+                                <img class="tech-logo--img" src="./resources/img/tech_logos/html_logo.png" alt="logo">
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="card-body">
+
+                        <div class="swiper-container">
+                            <!-- Additional required wrapper -->
+                            <div class="swiper-wrapper">
+                                <!-- Slides -->
+                                <div class="swiper-slide">
+                                    <img src="/resources/img/img-nmv1/nm-1.jpg">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="/resources/img/img-nmv1/nm-2.jpg">
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <img src="/resources/img/img-nmv1/nm-3.jpg">
+                                </div>
+                            </div>
+                            <!-- If we need pagination -->
+                            <div class="swiper-pagination"></div>
+
+                            <!-- If we need navigation buttons -->
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <div class="title-wrapper">
+
+                            <h4>Napon-Mont</h4>
+
+                            <div class="links-wrapper">
+                                <a href='https://github.com/vlada030/napon-mont' target="_blank" rel="noopener">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href='./resources/pages/napon-mont/index.html' target="_blank" rel="noopener">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+
+                            </div>
+                        </div>
+
+                        <p>Napon-Mont is blog page that presents all services of electrical company that offers.</p>
+                        <p>Short description:</p>
+                        <ul>
+                            <li>Basic technologies - HTML, CSS and some helper jQuery code snippets and modules. </li>
+                        </ul>
+                        <ul class="tech-logo--list">
+                            <li class="tech-logo--item">
+                                <img class="tech-logo--img" src="./resources/img/tech_logos/html_logo.png" alt="logo">
+                            </li>
+                            <li class="tech-logo--item">
+                                <img class="tech-logo--img" src="./resources/img/tech_logos/css_logo.jpg" alt="logo">
+                            </li>
+                            <li class="tech-logo--item">
+                                <img class="tech-logo--img" src="./resources/img/tech_logos/logo_javascript.png"
+                                    alt="logo">
+                            </li>
+                        </ul>
+
+                    </div>
+                </article>
+
+                <ul class="project-list">
+                    <li>
+                        <img src="./resources/img/img-frontendmentor/custon_video_player.jpg" alt="project">
+                        <div class='project-info'>
+                            <p>Implementation of HTML Video & HTML Drag and Drop API</p>
+                            <p>SCSS, JS (Webpack)</p>
+                            <div class="project-info__links">
+                                <a href='https://www.github.com/vlada030/frontendmentor-custom-video-player' target="_blank" rel="noopener">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href='https://frontendmentor-custom-video-player.vercel.app/' target="_blank" rel="noopener">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>                            
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="./resources/img/img-frontendmentor/calculator-app.jpg" alt="project">
+                        <div class='project-info'>
+                            <p>Simple calculator application with dark / light theme toggler</p>
+                            <p>SCSS, JS (Webpack)</p>
+                            <div class="project-info__links">
+                                <a href='https://github.com/vlada030/frontendmentor-calculator-app' target="_blank" rel="noopener">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href='https://frontendmentor-calculator-app.vercel.app/' target="_blank" rel="noopener">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="./resources/img/img-frontendmentor/interactive-pricing-component.jpg" alt="project">
+                        <div class='project-info'>
+                            <p>Interactive pricing component, responsive view</p>
+                            <p>SCSS, JS </p>
+                            <div class="project-info__links">
+                                <a href='https://github.com/vlada030/frontendmentor-interactive-pricing-component' target="_blank" rel="noopener">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href='https://frontendmentor-interactive-pricing-component-omega.vercel.app/' target="_blank" rel="noopener">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="./resources/img/img-frontendmentor/crowdfunding-product-page.jpg" alt="project">
+                        <div class='project-info'>
+                            <p>Interaction with elements on page, responsive view</p>
+                            <p>SCSS, JS (Webpack)</p>
+                            <div class="project-info__links">
+                                <a href='https://github.com/vlada030/frontendmentor-crowdfunding-product-page' target="_blank" rel="noopener">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href='https://frontendmentor-crowdfunding-product-page-khaki.vercel.app/' target="_blank" rel="noopener">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li>
+                        <img src="./resources/img/img-frontendmentor/bookmark-landing-page.jpg" alt="project">
+                        <div class='project-info'>
+                            <p>Positioning the elements on the page, responsive view</p>
+                            <p>SCSS, JS (Webpack)</p>
+                            <div class="project-info__links">
+                                <a href='https://github.com/vlada030/frontendmentor-bookmark-landing-page' target="_blank" rel="noopener">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href='https://frontendmentor-bookmark-landing-page.vercel.app/' target="_blank" rel="noopener">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="./resources/img/img-frontendmentor/github-user-search-app.jpg" alt="project">
+                        <div class='project-info'>
+                            <p>Fetch a user from Github API, theme toggler</p>
+                            <p>SCSS, JS (Webpack)</p>
+                            <div class="project-info__links">
+                                <a href='https://github.com/vlada030/frontendmentor-github-user-search-app' target="_blank" rel="noopener">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href='https://frontendmentor-github-user-search-app.vercel.app' target="_blank" rel="noopener">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="./resources/img/img-frontendmentor/pod-request-access-landing-page.jpg" alt="project">
+                        <div class='project-info'>
+                            <p>Responsive landing page</p>
+                            <p>SCSS, JS (Webpack)</p>
+                            <div class="project-info__links">
+                                <a href='https://github.com/vlada030/frontendmentor-pod-request-access-landing-page' target="_blank" rel="noopener">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href='https://frontendmentor-pod-request-access-landing-page.vercel.app/' target="_blank" rel="noopener">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="./resources/img/img-frontendmentor/meet-landing-page.jpg" alt="project">
+                        <div class='project-info'>
+                            <p>Responsive landing page</p>
+                            <p>SCSS</p>
+                            <div class="project-info__links">
+                                <a href='https://github.com/vlada030/frontendmentor-meet-landing-page' target="_blank" rel="noopener">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href='https://frontendmentor-meet-landing-page.vercel.app/' target="_blank" rel="noopener">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="./resources/img/img-frontendmentor/testimonials-grid-section.jpg" alt="project">
+                        <div class='project-info'>
+                            <p>Responsive article component</p>
+                            <p>SCSS</p>
+                            <div class="project-info__links">
+                                <a href='https://github.com/vlada030/frontendmentor-testimonials-grid-section' target="_blank" rel="noopener">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href='https://frontendmentor-testimonials-grid-section-three.vercel.app/' target="_blank" rel="noopener">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+
+            </div>
+        </section>
+
+        <section class="section" data-type=tips>
+            <div class="tips-wrapper">
+                <h4>Tips</h4>
+                <p>This section contains a list of resources that helped me a lot in my learning journey. Thanks to the authors of the text, I adopted the technology in a much easier and better way. I put them in this section as a reminder for a future use.</p>
+                <div class="btn-wrapper">
+                    <button class="btn" id="all">All</button>
+                    <button class="btn" id="html">HTML</button>
+                    <button class="btn" id="css">CSS</button>
+                    <button class="btn" id="js">JavaScript</button>
+                    <button class="btn" id="react">React</button>
+                    <button class="btn" id="node">Node.js</button>
+                    <button class="btn" id="utilities">Utilities</button>
+                    <button class="btn" id="interview">Interview</button>
+                </div>
+                <div class="tips-list">
+                    <article class="tips-item" data-type=js>
+                        <h4>this, call(), apply(), bind()</h4>
+                        <p class="tips-item__mark">JavaScript</p>
+                        <p>Basic rules worth remembering.</p>
+                        <a href="https://www.codingame.com/playgrounds/9799/learn-solve-call-apply-and-bind-methods-in-javascript" target="_blank" rel="noopener">Read the article...</a>
+                    </article>
+                    <article class="tips-item" data-type=css>
+                        <h4>CSS Specificity</h4>
+                        <p class="tips-item__mark">CSS</p>
+                        <p>How to calculate CSS specificity.</p>
+                        <a href="https://css-tricks.com/specifics-on-css-specificity/" target="_blank" rel="noopener">Read the
+                            article...</a>
+                    </article>
+                    <article class="tips-item" data-type=html>
+                        <h4>Lazy Loading Images</h4>
+                        <p class="tips-item__mark">HTML</p>
+                        <p>The complete guide how to lazy load images, interesting solutions.</p>
+                        <a href="https://css-tricks.com/the-complete-guide-to-lazy-loading-images/" target="_blank" rel="noopener">Read the article...</a>
+                    </article>
+                    <article class="tips-item" data-type=js>
+                        <h4>Format Currency</h4>
+                        <p class="tips-item__mark">JavaScript</p>
+                        <p>How to Format Currency in ES6.</p>
+                        <a href="https://www.samanthaming.com/tidbits/30-how-to-format-currency-in-es6/" target="_blank" rel="noopener">Read the article...</a>
+                    </article>
+
+                    <article class="tips-item" data-type=utilities>
+                        <h4>Webpack setup</h4>
+                        <p class="tips-item__mark">Utilities</p>
+                        <p>The complete guide how to setup Webpack 5.</p>
+                        <a href="https://www.valentinog.com/blog/webpack/" target="_blank" rel="noopener" >Read the article...</a>
+                    </article>
+                    <article class="tips-item" data-type=js>
+                        <h4>TypeScript Fundamentals</h4>
+                        <p class="tips-item__mark">JavaScript</p>
+                        <p>If you’re learning TypeScript this is the resource for you.</p>
+                        <a href="https://joyofcode.xyz/typescript-fundamentals" target="_blank" rel="noopener">Read the article...</a>
+                    </article>
+                    <article class="tips-item" data-type=utilities>
+                        <h4>Understanding SVG</h4>
+                        <p class="tips-item__mark">Utilities</p>
+                        <p>How to scale SVG.</p>
+                        <a href="https://css-tricks.com/scale-svg/" target="_blank" rel="noopener" >Read the article...</a>
+                    </article>
+                    <article class="tips-item" data-type=js>
+                        <h4>Web API</h4>
+                        <p class="tips-item__mark">JavaScript</p>
+                        <p>Web APIs specified in the HTML5 specification.</p>
+                        <a href="https://www.javascripttutorial.net/web-apis/" target="_blank" rel="noopener" >Read the article...</a>
+                    </article>
+                    <article class="tips-item" data-type=html>
+                        <h4>The HTML5 template element</h4>
+                        <p class="tips-item__mark">HTML</p>
+                        <p>Easy way to define a reusable fragment of HTML.</p>
+                        <a href="https://dev.to/ahferroin7/the-html5-template-element-26b6" target="_blank" rel="noopener" >Read the article...</a>
+                    </article>
+                    <article class="tips-item" data-type=js>
+                        <h4>Append VS appendChild</h4>
+                        <p class="tips-item__mark">JavaScript</p>
+                        <p>append and appendChild are two popular methods.</p>
+                        <a href="https://dev.to/ibn_abubakre/append-vs-appendchild-a4m" target="_blank" rel="noopener" >Read the article...</a>
+                    </article>
+                    <article class="tips-item" data-type=interview>
+                        <h4>React Interview Questions</h4>
+                        <p class="tips-item__mark">Interview</p>
+                        <p>In total 300+ questions.</p>
+                        <a href="https://dev.to/aviyel/300-react-interview-questions-4dag" target="_blank" rel="noopener" >Read the article...</a>
+                    </article>
+                    <article class="tips-item" data-type=css>
+                        <h4>Sass structure</h4>
+                        <p class="tips-item__mark">CSS</p>
+                        <p>2 Ways to Structure Sass.</p>
+                        <a href="https://www.webdesignerdepot.com/2020/12/2-smartest-ways-to-structure-sass/" target="_blank" rel="noopener" >Read the article...</a>
+                    </article>
+                    
+                    <article class="tips-item" data-type=interview>
+                        <h4>JavaScript Hoisting</h4>
+                        <p class="tips-item__mark">Interview</p>
+                        <p>Series of articles, excellent.</p>
+                        <a href="https://www.freecodecamp.org/news/function-hoisting-hoisting-interview-questions-b6f91dbc2be8/" target="_blank" rel="noopener" >Read the article...</a>
+                    </article>
+                    <article class="tips-item" data-type=utilities>
+                        <h4>Color wheel</h4>
+                        <p class="tips-item__mark">Utilities</p>
+                        <p>How to combine a colors.</p>
+                        <a href="https://www.canva.com/colors/color-wheel/" target="_blank" rel="noopener" >Read the article...</a>
+                    </article>
+                    <article class="tips-item" data-type=react>
+                        <h4>React Hook Form</h4>
+                        <p class="tips-item__mark">React</p>
+                        <p>Performant, flexible and extensible forms with easy-to-use validation.</p>
+                        <a href="https://react-hook-form.com/" target="_blank" rel="noopener" >Read the article...</a>
+                    </article>                    
+                    <article class="tips-item" data-type=react>
+                        <h4>React Architecture</h4>
+                        <p class="tips-item__mark">React</p>
+                        <p>How to Structure and Organize a React Application.</p>
+                        <a href="https://www.taniarascia.com/react-architecture-directory-structure/" target="_blank" rel="noopener" >Read the article...</a>
+                    </article>                    
+                    
+                </div>
+            </div>
+        </section>
+
+        <section class="section" data-type=contact>
+            <div class="contact-wrapper">
+                <img src="./resources/img/contact_page.webp" alt="contatc">
+                <h4>Contact</h4>
+                <p>Want to get in touch? Whether you're interested in working on a project together or just want to say hello, feel free to <a href="mailto:vlada030@gmail.com">email me</a> and I'll get back to you as soon as I can!</p>
+                <p>You can also check out my social links bellow to get in touch that way.</p>
+                <div class="links-wrapper">
+
+                    <a href="mailto:vlada030@gmail.com">
+                        <i class="far fa-envelope"></i>
+                    </a>
+                    
+                    <a href="https://www.github.com/vlada030" target="_blank" rel="noopener">
+                        <i class="fab fa-github"></i>
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/vladimir-nikodijević-260561146" target="_blank" rel="noopener">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+
+                    <a href="./resources/Vladimir Nikodijević CV.pdf"><i class="fas fa-file-download"></i></a>
+                    
+                </div>
+
+                <h5>Best regards!</h5>
+            </div>
+        </section>
+
+        <!-- <footer class="footer">
+            <span>&copy;</span>
+            <span id="year"></span>
+        </footer> -->
+
+    </main>
+
+</body>
+
+</html>
